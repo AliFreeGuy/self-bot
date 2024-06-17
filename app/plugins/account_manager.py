@@ -44,9 +44,6 @@ async def account_manager_handler(client , call ):
         elif status == 'status_account' : 
             await change_status_account(client , call )
         
-        elif status == 'gap' : 
-            await account_gap_manager(client , call )
-
         elif status == 'create_session' :
             await create_session(client , call )
             
