@@ -209,3 +209,270 @@
 [1;92mINFO [2024-06-17 07:25:43 - connection.py:66] - Disconnected[0m
 [1;92mINFO [2024-06-17 07:25:43 - session.py:315] - NetworkTask stopped[0m
 [1;92mINFO [2024-06-17 07:25:43 - session.py:180] - Session stopped[0m
+[1;92mINFO [2024-06-17 07:27:33 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-17 07:27:33 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-06-17 07:27:33 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-06-17 07:27:33 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-06-17 07:27:33 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-06-17 07:27:33 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-06-17 07:27:33 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-06-17 07:27:33 - session.py:155] - Session started[0m
+[1;92mINFO [2024-06-17 07:27:33 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-06-17 07:27:34 - client.py:698] - [selfbot] [LOAD] CallbackQueryHandler("account_manager_handler") in group 1 from "plugins.account_manager"[0m
+[1;92mINFO [2024-06-17 07:27:34 - client.py:698] - [selfbot] [LOAD] CallbackQueryHandler("admin_manager_handler") in group 0 from "plugins.admin_manager"[0m
+[1;92mINFO [2024-06-17 07:27:34 - client.py:698] - [selfbot] [LOAD] MessageHandler("start_manager") in group 0 from "plugins.start_command"[0m
+[1;92mINFO [2024-06-17 07:27:34 - client.py:698] - [selfbot] [LOAD] MessageHandler("user_not_admin") in group 0 from "plugins.start_command"[0m
+[1;92mINFO [2024-06-17 07:27:34 - client.py:775] - [selfbot] Successfully loaded 4 plugins from "plugins"[0m
+[1;92mINFO [2024-06-17 07:27:34 - dispatcher.py:154] - Started 8 HandlerTasks[0m
+[1;92mINFO [2024-06-17 07:27:39 - start_command.py:16] - command : /start   -   user : 5522477996[0m
+[1;92mINFO [2024-06-17 07:27:41 - start_command.py:16] - command : /start   -   user : 5522477996[0m
+[1;93mWARNING [2024-06-17 07:27:43 - admin_manager.py:11] - callback data : manager:accounts  - user : 5522477996[0m
+[1;93mWARNING [2024-06-17 07:27:44 - admin_manager.py:11] - callback data : manager:manage:+46765147252  - user : 5522477996[0m
+[1;93mWARNING [2024-06-17 07:27:46 - admin_manager.py:11] - callback data : manager:back_to_accounts  - user : 5522477996[0m
+[1;93mWARNING [2024-06-17 07:27:48 - admin_manager.py:11] - callback data : manager:manage:+46765147252  - user : 5522477996[0m
+[1;92mINFO [2024-06-17 07:29:49 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-06-17 07:29:54 - dispatcher.py:167] - Stopped 8 HandlerTasks[0m
+[1;92mINFO [2024-06-17 07:29:54 - session.py:291] - PingTask stopped[0m
+[1;92mINFO [2024-06-17 07:29:54 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-06-17 07:29:54 - session.py:315] - NetworkTask stopped[0m
+[1;92mINFO [2024-06-17 07:29:54 - session.py:180] - Session stopped[0m
+[1;92mINFO [2024-06-17 07:32:23 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-17 07:32:23 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-06-17 07:32:24 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-06-17 07:32:24 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-06-17 07:32:24 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-06-17 07:32:24 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-06-17 07:32:24 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-06-17 07:32:24 - session.py:155] - Session started[0m
+[1;92mINFO [2024-06-17 07:32:24 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-06-17 07:32:25 - client.py:698] - [selfbot] [LOAD] CallbackQueryHandler("account_manager_handler") in group 1 from "plugins.account_manager"[0m
+[1;92mINFO [2024-06-17 07:32:25 - client.py:698] - [selfbot] [LOAD] CallbackQueryHandler("admin_manager_handler") in group 0 from "plugins.admin_manager"[0m
+[1;92mINFO [2024-06-17 07:32:25 - client.py:698] - [selfbot] [LOAD] MessageHandler("start_manager") in group 0 from "plugins.start_command"[0m
+[1;92mINFO [2024-06-17 07:32:25 - client.py:698] - [selfbot] [LOAD] MessageHandler("user_not_admin") in group 0 from "plugins.start_command"[0m
+[1;92mINFO [2024-06-17 07:32:25 - client.py:775] - [selfbot] Successfully loaded 4 plugins from "plugins"[0m
+[1;92mINFO [2024-06-17 07:32:25 - dispatcher.py:154] - Started 8 HandlerTasks[0m
+[1;92mINFO [2024-06-17 07:32:27 - start_command.py:16] - command : /start   -   user : 5522477996[0m
+[1;93mWARNING [2024-06-17 07:32:30 - admin_manager.py:11] - callback data : manager:accounts  - user : 5522477996[0m
+[1;93mWARNING [2024-06-17 07:32:31 - admin_manager.py:11] - callback data : manager:manage:+46765147252  - user : 5522477996[0m
+[1;93mWARNING [2024-06-17 07:32:34 - admin_manager.py:11] - callback data : manager:create_session:+46765147252  - user : 5522477996[0m
+[1;92mINFO [2024-06-17 07:37:10 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-06-17 07:37:15 - dispatcher.py:167] - Stopped 8 HandlerTasks[0m
+[1;92mINFO [2024-06-17 07:37:15 - session.py:291] - PingTask stopped[0m
+[1;92mINFO [2024-06-17 07:37:15 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-06-17 07:37:15 - session.py:315] - NetworkTask stopped[0m
+[1;92mINFO [2024-06-17 07:37:15 - session.py:180] - Session stopped[0m
+[1;92mINFO [2024-06-17 07:37:17 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-17 07:37:17 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-06-17 07:37:18 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-06-17 07:37:18 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-06-17 07:37:18 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-06-17 07:37:18 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-06-17 07:37:18 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-06-17 07:37:18 - session.py:155] - Session started[0m
+[1;92mINFO [2024-06-17 07:37:18 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-06-17 07:37:19 - client.py:698] - [selfbot] [LOAD] CallbackQueryHandler("account_manager_handler") in group 1 from "plugins.account_manager"[0m
+[1;92mINFO [2024-06-17 07:37:19 - client.py:698] - [selfbot] [LOAD] CallbackQueryHandler("admin_manager_handler") in group 0 from "plugins.admin_manager"[0m
+[1;92mINFO [2024-06-17 07:37:19 - client.py:698] - [selfbot] [LOAD] MessageHandler("start_manager") in group 0 from "plugins.start_command"[0m
+[1;92mINFO [2024-06-17 07:37:19 - client.py:698] - [selfbot] [LOAD] MessageHandler("user_not_admin") in group 0 from "plugins.start_command"[0m
+[1;92mINFO [2024-06-17 07:37:19 - client.py:775] - [selfbot] Successfully loaded 4 plugins from "plugins"[0m
+[1;92mINFO [2024-06-17 07:37:19 - dispatcher.py:154] - Started 8 HandlerTasks[0m
+[1;92mINFO [2024-06-17 07:37:21 - start_command.py:16] - command : /start   -   user : 5522477996[0m
+[1;93mWARNING [2024-06-17 07:37:23 - admin_manager.py:11] - callback data : manager:accounts  - user : 5522477996[0m
+[1;93mWARNING [2024-06-17 07:37:24 - admin_manager.py:11] - callback data : manager:manage:+46765147252  - user : 5522477996[0m
+[1;93mWARNING [2024-06-17 07:37:26 - admin_manager.py:11] - callback data : manager:create_session:+46765147252  - user : 5522477996[0m
+[1;93mWARNING [2024-06-17 07:37:30 - admin_manager.py:11] - callback data : manager:back_to_accounts  - user : 5522477996[0m
+[1;92mINFO [2024-06-17 07:37:31 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-06-17 07:37:33 - dispatcher.py:167] - Stopped 8 HandlerTasks[0m
+[1;92mINFO [2024-06-17 07:37:33 - session.py:291] - PingTask stopped[0m
+[1;92mINFO [2024-06-17 07:37:33 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-06-17 07:37:33 - session.py:315] - NetworkTask stopped[0m
+[1;92mINFO [2024-06-17 07:37:33 - session.py:180] - Session stopped[0m
+[1;92mINFO [2024-06-17 07:39:30 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-17 07:39:30 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-06-17 07:39:31 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-06-17 07:39:31 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-06-17 07:39:31 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-06-17 07:39:31 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-06-17 07:39:31 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-06-17 07:39:31 - session.py:155] - Session started[0m
+[1;92mINFO [2024-06-17 07:39:31 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-06-17 07:39:32 - client.py:698] - [selfbot] [LOAD] CallbackQueryHandler("account_manager_handler") in group 1 from "plugins.account_manager"[0m
+[1;92mINFO [2024-06-17 07:39:32 - client.py:698] - [selfbot] [LOAD] CallbackQueryHandler("admin_manager_handler") in group 0 from "plugins.admin_manager"[0m
+[1;92mINFO [2024-06-17 07:39:32 - client.py:698] - [selfbot] [LOAD] MessageHandler("start_manager") in group 0 from "plugins.start_command"[0m
+[1;92mINFO [2024-06-17 07:39:32 - client.py:698] - [selfbot] [LOAD] MessageHandler("user_not_admin") in group 0 from "plugins.start_command"[0m
+[1;92mINFO [2024-06-17 07:39:32 - client.py:775] - [selfbot] Successfully loaded 4 plugins from "plugins"[0m
+[1;92mINFO [2024-06-17 07:39:32 - dispatcher.py:154] - Started 8 HandlerTasks[0m
+[1;92mINFO [2024-06-17 07:39:34 - start_command.py:16] - command : /start   -   user : 5522477996[0m
+[1;93mWARNING [2024-06-17 07:39:36 - admin_manager.py:11] - callback data : manager:accounts  - user : 5522477996[0m
+[1;93mWARNING [2024-06-17 07:39:38 - admin_manager.py:11] - callback data : manager:manage:+46765147252  - user : 5522477996[0m
+[1;93mWARNING [2024-06-17 07:39:39 - admin_manager.py:11] - callback data : manager:create_session:+46765147252  - user : 5522477996[0m
+[1;92mINFO [2024-06-17 07:44:50 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-17 07:44:50 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-06-17 07:44:50 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-06-17 07:44:50 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-06-17 07:44:51 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-06-17 07:44:51 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-06-17 07:44:51 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-06-17 07:44:51 - session.py:155] - Session started[0m
+[1;92mINFO [2024-06-17 07:44:51 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-06-17 07:44:52 - client.py:698] - [selfbot] [LOAD] CallbackQueryHandler("account_manager_handler") in group 1 from "plugins.account_manager"[0m
+[1;92mINFO [2024-06-17 07:44:52 - client.py:698] - [selfbot] [LOAD] CallbackQueryHandler("admin_manager_handler") in group 0 from "plugins.admin_manager"[0m
+[1;92mINFO [2024-06-17 07:44:52 - client.py:698] - [selfbot] [LOAD] MessageHandler("start_manager") in group 0 from "plugins.start_command"[0m
+[1;92mINFO [2024-06-17 07:44:52 - client.py:698] - [selfbot] [LOAD] MessageHandler("user_not_admin") in group 0 from "plugins.start_command"[0m
+[1;92mINFO [2024-06-17 07:44:52 - client.py:775] - [selfbot] Successfully loaded 4 plugins from "plugins"[0m
+[1;92mINFO [2024-06-17 07:44:52 - dispatcher.py:154] - Started 8 HandlerTasks[0m
+[1;92mINFO [2024-06-17 07:44:54 - start_command.py:16] - command : /start   -   user : 5522477996[0m
+[1;93mWARNING [2024-06-17 07:44:56 - admin_manager.py:11] - callback data : manager:accounts  - user : 5522477996[0m
+[1;93mWARNING [2024-06-17 07:44:57 - admin_manager.py:11] - callback data : manager:manage:+46765147252  - user : 5522477996[0m
+[1;93mWARNING [2024-06-17 07:44:59 - admin_manager.py:11] - callback data : manager:create_session:+46765147252  - user : 5522477996[0m
+[1;91mERROR [2024-06-17 07:44:59 - dispatcher.py:253] - 'str' object has no attribute 'text'[0m
+Traceback (most recent call last):
+  File "/home/freeguy/.local/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 242, in handler_worker
+    await self.loop.run_in_executor(
+  File "/usr/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/freeguy/.local/lib/python3.10/site-packages/pyrogram/sync.py", line 78, in async_to_sync_wrap
+    return asyncio.run_coroutine_threadsafe(coroutine, main_loop).result()
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 458, in result
+    return self.__get_result()
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+    raise self._exception
+  File "/home/freeguy/.local/lib/python3.10/site-packages/pyromod/listen/callback_query_handler.py", line 146, in resolve_future_or_callback
+    await self.original_callback(client, query, *args)
+  File "/home/freeguy/Desktop/project/selfbot/app/plugins/account_manager.py", line 51, in account_manager_handler
+    await create_session(client , call )
+  File "/home/freeguy/Desktop/project/selfbot/app/plugins/account_manager.py", line 63, in create_session
+    if phone_number and phone_number.text and check_phone_number(phone_number.text) :
+AttributeError: 'str' object has no attribute 'text'
+[1;92mINFO [2024-06-17 07:45:02 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-06-17 07:45:06 - dispatcher.py:167] - Stopped 8 HandlerTasks[0m
+[1;92mINFO [2024-06-17 07:45:06 - session.py:291] - PingTask stopped[0m
+[1;92mINFO [2024-06-17 07:45:06 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-06-17 07:45:06 - session.py:315] - NetworkTask stopped[0m
+[1;92mINFO [2024-06-17 07:45:06 - session.py:180] - Session stopped[0m
+[1;92mINFO [2024-06-17 07:45:58 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-17 07:45:58 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-06-17 07:45:58 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-06-17 07:45:58 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-06-17 07:45:58 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-06-17 07:45:58 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-06-17 07:45:58 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-06-17 07:45:58 - session.py:155] - Session started[0m
+[1;92mINFO [2024-06-17 07:45:58 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-06-17 07:45:59 - client.py:698] - [selfbot] [LOAD] CallbackQueryHandler("account_manager_handler") in group 1 from "plugins.account_manager"[0m
+[1;92mINFO [2024-06-17 07:45:59 - client.py:698] - [selfbot] [LOAD] CallbackQueryHandler("admin_manager_handler") in group 0 from "plugins.admin_manager"[0m
+[1;92mINFO [2024-06-17 07:45:59 - client.py:698] - [selfbot] [LOAD] MessageHandler("start_manager") in group 0 from "plugins.start_command"[0m
+[1;92mINFO [2024-06-17 07:45:59 - client.py:698] - [selfbot] [LOAD] MessageHandler("user_not_admin") in group 0 from "plugins.start_command"[0m
+[1;92mINFO [2024-06-17 07:45:59 - client.py:775] - [selfbot] Successfully loaded 4 plugins from "plugins"[0m
+[1;92mINFO [2024-06-17 07:45:59 - dispatcher.py:154] - Started 8 HandlerTasks[0m
+[1;92mINFO [2024-06-17 07:46:02 - start_command.py:16] - command : /start   -   user : 5522477996[0m
+[1;93mWARNING [2024-06-17 07:46:04 - admin_manager.py:11] - callback data : manager:accounts  - user : 5522477996[0m
+[1;93mWARNING [2024-06-17 07:46:06 - admin_manager.py:11] - callback data : manager:manage:+46765147252  - user : 5522477996[0m
+[1;93mWARNING [2024-06-17 07:46:07 - admin_manager.py:11] - callback data : manager:create_session:+46765147252  - user : 5522477996[0m
+[1;92mINFO [2024-06-17 07:46:07 - auth.py:82] - Start creating a new auth key on DC2[0m
+[1;92mINFO [2024-06-17 07:46:07 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-17 07:46:07 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-06-17 07:46:07 - connection.py:54] - Connected! Production DC2 - IPv4[0m
+[1;92mINFO [2024-06-17 07:46:09 - auth.py:267] - Done auth key exchange: DhGenOk[0m
+[1;92mINFO [2024-06-17 07:46:09 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-06-17 07:46:09 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-17 07:46:09 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-06-17 07:46:09 - connection.py:54] - Connected! Production DC2 - IPv4[0m
+[1;92mINFO [2024-06-17 07:46:09 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-06-17 07:46:10 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-06-17 07:46:10 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-06-17 07:46:10 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-06-17 07:46:10 - session.py:155] - Session started[0m
+[1;92mINFO [2024-06-17 07:46:10 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-06-17 07:46:10 - session.py:291] - PingTask stopped[0m
+[1;92mINFO [2024-06-17 07:46:10 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-06-17 07:46:10 - session.py:315] - NetworkTask stopped[0m
+[1;92mINFO [2024-06-17 07:46:10 - session.py:180] - Session stopped[0m
+[1;92mINFO [2024-06-17 07:46:10 - auth.py:82] - Start creating a new auth key on DC4[0m
+[1;92mINFO [2024-06-17 07:46:10 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-17 07:46:10 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-06-17 07:46:11 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-06-17 07:46:13 - auth.py:267] - Done auth key exchange: DhGenOk[0m
+[1;92mINFO [2024-06-17 07:46:13 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-06-17 07:46:13 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-17 07:46:13 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-06-17 07:46:13 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-06-17 07:46:13 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-06-17 07:46:14 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-06-17 07:46:14 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-06-17 07:46:14 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-06-17 07:46:14 - session.py:155] - Session started[0m
+[1;92mINFO [2024-06-17 07:46:14 - session.py:272] - PingTask started[0m
+[1;93mWARNING [2024-06-17 07:46:22 - account_manager.py:98] - Telegram says: [401 SESSION_PASSWORD_NEEDED] - The two-step verification is enabled and a password is required (caused by "auth.SignIn")[0m
+[1;93mWARNING [2024-06-17 07:46:29 - account_manager.py:106] - BAGY9NIAPBVXPwEv9JXeh--kxOi7D2Cm4uPyih3yLIHj6zjGlQsJKaoQHNNqhmYuPnD76ZsQKuwHt-JEH3b-KgOvidzHWlA-yRF8TjjMOwivqY8xkhfiY5_YZDlBNU1bGYODVTHMuO3BRfYrMeA2z85Dl9fujLLjJZwW_eD2Oqg3GRH5PstBmjMkhZ5PXgzJIR31d4qbOEvPeGZgg8y6zRgy-d17rfO60HI-RkMtrxp8MCny_awxh2pkPgsAo2jHourEmbd7zeEYuSNRpmbfN-rm6s-BZfr8wxJrIMIQRytSm7cSiTRl4noSDTRPhEi-WknKwX4apPNiPbx9NMnwZkHVpImq4AAAAAFIjDkpAA[0m
+[1;92mINFO [2024-06-17 07:46:29 - session.py:291] - PingTask stopped[0m
+[1;92mINFO [2024-06-17 07:46:29 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-06-17 07:46:29 - session.py:315] - NetworkTask stopped[0m
+[1;92mINFO [2024-06-17 07:46:29 - session.py:180] - Session stopped[0m
+[1;92mINFO [2024-06-17 07:46:36 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-06-17 07:46:38 - dispatcher.py:167] - Stopped 8 HandlerTasks[0m
+[1;92mINFO [2024-06-17 07:46:38 - session.py:291] - PingTask stopped[0m
+[1;92mINFO [2024-06-17 07:46:38 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-06-17 07:46:38 - session.py:315] - NetworkTask stopped[0m
+[1;92mINFO [2024-06-17 07:46:38 - session.py:180] - Session stopped[0m
+[1;92mINFO [2024-06-17 07:46:46 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-17 07:46:46 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-06-17 07:46:46 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-06-17 07:46:46 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-06-17 07:46:47 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-06-17 07:46:47 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-06-17 07:46:47 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-06-17 07:46:47 - session.py:155] - Session started[0m
+[1;92mINFO [2024-06-17 07:46:47 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-06-17 07:46:47 - client.py:698] - [selfbot] [LOAD] CallbackQueryHandler("account_manager_handler") in group 1 from "plugins.account_manager"[0m
+[1;92mINFO [2024-06-17 07:46:47 - client.py:698] - [selfbot] [LOAD] CallbackQueryHandler("admin_manager_handler") in group 0 from "plugins.admin_manager"[0m
+[1;92mINFO [2024-06-17 07:46:47 - client.py:698] - [selfbot] [LOAD] MessageHandler("start_manager") in group 0 from "plugins.start_command"[0m
+[1;92mINFO [2024-06-17 07:46:47 - client.py:698] - [selfbot] [LOAD] MessageHandler("user_not_admin") in group 0 from "plugins.start_command"[0m
+[1;92mINFO [2024-06-17 07:46:47 - client.py:775] - [selfbot] Successfully loaded 4 plugins from "plugins"[0m
+[1;92mINFO [2024-06-17 07:46:47 - dispatcher.py:154] - Started 8 HandlerTasks[0m
+[1;93mWARNING [2024-06-17 07:46:49 - admin_manager.py:11] - callback data : manager:back_to_accounts  - user : 5522477996[0m
+[1;93mWARNING [2024-06-17 07:46:50 - admin_manager.py:11] - callback data : manager:manage:+46765147252  - user : 5522477996[0m
+[1;93mWARNING [2024-06-17 07:46:52 - admin_manager.py:11] - callback data : manager:create_session:+46765147252  - user : 5522477996[0m
+[1;92mINFO [2024-06-17 07:46:52 - auth.py:82] - Start creating a new auth key on DC2[0m
+[1;92mINFO [2024-06-17 07:46:52 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-17 07:46:52 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-06-17 07:46:52 - connection.py:54] - Connected! Production DC2 - IPv4[0m
+[1;92mINFO [2024-06-17 07:46:54 - auth.py:267] - Done auth key exchange: DhGenOk[0m
+[1;92mINFO [2024-06-17 07:46:54 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-06-17 07:46:54 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-17 07:46:54 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-06-17 07:46:54 - connection.py:54] - Connected! Production DC2 - IPv4[0m
+[1;92mINFO [2024-06-17 07:46:54 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-06-17 07:46:54 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-06-17 07:46:54 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-06-17 07:46:54 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-06-17 07:46:54 - session.py:155] - Session started[0m
+[1;92mINFO [2024-06-17 07:46:54 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-06-17 07:46:55 - session.py:291] - PingTask stopped[0m
+[1;92mINFO [2024-06-17 07:46:55 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-06-17 07:46:55 - session.py:315] - NetworkTask stopped[0m
+[1;92mINFO [2024-06-17 07:46:55 - session.py:180] - Session stopped[0m
+[1;92mINFO [2024-06-17 07:46:55 - auth.py:82] - Start creating a new auth key on DC4[0m
+[1;92mINFO [2024-06-17 07:46:55 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-17 07:46:55 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-06-17 07:46:55 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-06-17 07:46:57 - auth.py:267] - Done auth key exchange: DhGenOk[0m
+[1;92mINFO [2024-06-17 07:46:57 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-06-17 07:46:57 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-17 07:46:57 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-06-17 07:46:58 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-06-17 07:46:58 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-06-17 07:46:58 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-06-17 07:46:58 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-06-17 07:46:58 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-06-17 07:46:58 - session.py:155] - Session started[0m
+[1;92mINFO [2024-06-17 07:46:58 - session.py:272] - PingTask started[0m
+[1;93mWARNING [2024-06-17 07:47:05 - admin_manager.py:11] - callback data : manager:back_to_accounts  - user : 5522477996[0m
+[1;93mWARNING [2024-06-17 07:47:06 - admin_manager.py:11] - callback data : manager:manage:+46765147252  - user : 5522477996[0m
+[1;93mWARNING [2024-06-17 07:47:10 - admin_manager.py:11] - callback data : manager:back_to_accounts  - user : 5522477996[0m
+[1;92mINFO [2024-06-17 07:47:15 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-06-17 07:47:17 - dispatcher.py:167] - Stopped 8 HandlerTasks[0m
+[1;92mINFO [2024-06-17 07:47:17 - session.py:291] - PingTask stopped[0m
+[1;92mINFO [2024-06-17 07:47:17 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-06-17 07:47:17 - session.py:315] - NetworkTask stopped[0m
+[1;92mINFO [2024-06-17 07:47:17 - session.py:180] - Session stopped[0m

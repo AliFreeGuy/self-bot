@@ -53,6 +53,11 @@ def account_manager(data , account_gaps):
         InlineKeyboardButton(text=status_text,callback_data=f'manager:status_account:{data["phone"]}'),        
         ])
     
+
+    buttons.append([
+        InlineKeyboardButton(text='ایجاد سشن',callback_data=f'manager:create_session:{data["phone"]}'),        
+        ])
+    
     buttons.append([
 
         InlineKeyboardButton(text='🔙',callback_data='manager:back_to_accounts'),

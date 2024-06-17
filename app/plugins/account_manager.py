@@ -10,6 +10,9 @@ from utils import run_docker
 import config
 from utils.utils import get_user_gap , set_user_gap
 from pyrogram.enums import ChatType
+from utils import utils
+
+
 
 PROJECT_DIR = os.path.dirname(os.path.abspath(__file__))
 
@@ -43,8 +46,99 @@ async def account_manager_handler(client , call ):
         
         elif status == 'gap' : 
             await account_gap_manager(client , call )
+
+        elif status == 'create_session' :
+            await create_session(client , call )
             
         
+
+
+async def create_session(client , call ):
+    phone_number = call.data.split(':')[2]
+    account_key = f'account:{phone_number}'
+    account_data = cache.get_account(account_key)
+    
+
+
+    
+    if phone_number  and check_phone_number(phone_number) :
+        phone_number = phone_number
+        session_name = str(random_code())
+        BASE_DIR  = os.getcwd()
+        session_path = f'accounts_session/{session_name}'
+        if config.DEBUG == True or config.DEBUG == 'True' :
+            account = Client(session_path, API_ID, API_HASH   , proxy= config.PROXY )
+        else :
+            account = Client(session_path, API_ID, API_HASH   )
+
+        await account.connect()
+        
+        sent_code = await account.send_code(phone_number)
+        code = await client.ask(chat_id=call.from_user.id, text=text.send_code)
+
+        if not code.text.lower().startswith('a'):
+           
+            await deleter(client , call , message_id=call.message.id +1)
+            await alert(client , call , message=text.err_code_format)
+
+        elif code.text.lower().startswith('a'):
+            user_code = code.text.replace('a' , '')
+
+            try :
+                signed_in = await account.sign_in(phone_number, sent_code.phone_code_hash, user_code)
+                try :
+                    session_string = await account.export_session_string()
+                    cache.redis.hset(name=account_key , key='session_string' , value=session_string)
+                    logger.warning(session_string)
+                    await alert(client , call , message='سشن با موفقیت دریافت شد !')
+                except Exception as e :logger.warning(e)
+                await account.disconnect()
+                await deleter(client , call , message_id=call.message.id +1)
+
+            except errors.SessionPasswordNeeded as e:
+                logger.warning(e)
+                password_hint = await account.get_password_hint()
+                password = await client.ask(chat_id=call.from_user.id, text=text.enter_password(password_hint))
+                try :
+                    await account.check_password(password.text)
+                    try :
+                        session_string = await account.export_session_string()
+                        cache.redis.hset(name=account_key , key='session_string' , value=session_string)
+                        logger.warning(session_string)
+                        await alert(client , call , message='سشن با موفقیت دریافت شد !')
+                    except Exception as e : logger.warning(e)
+                    await account.disconnect()
+                    await deleter(client , call , message_id=call.message.id +1)
+
+
+
+                except errors.PasswordHashInvalid as e :
+                    logger.warning(e)
+                    await deleter(client , call , message_id=call.message.id +1)
+                    await alert(client , call , message=text.password_is_wrong)
+
+    
+        
+            except errors.PhoneCodeInvalid as e:
+                logger.warning(e)
+                await deleter(client , call , message_id=call.message.id +1)
+                await alert(client , call , message=text.code_is_wrong)
+
+            except errors.PhoneCodeExpired as e :
+                logger.warning(e)
+                await deleter(client , call , message_id=call.message.id +1)
+                await alert(client , call , message=text.code_is_broken)
+
+                
+            except Exception as e :
+                logger.warning(e)
+                await deleter(client  , call , message_id=call.message.id +1)
+
+    else :
+        await deleter(client , call , message_id=call.message.id +1)
+        await alert(client , call , message=text.error_alert)
+
+    
 
 
 async def account_gap_manager(client , call ):

@@ -20,6 +20,11 @@ class CacheService:
     def delete_data(self, key):
         self.redis.delete(key)
 
+    def get_account(self , key):
+        return self.redis.hgetall(key)
+
+
+
 cache = CacheService()
 
 
