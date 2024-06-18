@@ -45,7 +45,7 @@ def accounts_list(accounts):
 
     return InlineKeyboardMarkup(buttons)
 
-def account_manager(data , account_gaps):
+def account_manager(data ):
     buttons = []
     status_text = 'اکانت روشن است' if data['status'] == 'on' else 'اکانت خاموش است'
 
@@ -66,8 +66,5 @@ def account_manager(data , account_gaps):
         ])
     
 
-    for gap in account_gaps : 
-         gap_name = f'{"✔️" if gap["status"] == "on" else ""}{gap["gap_name"]}'
-         buttons.append([InlineKeyboardButton(text=gap_name,callback_data=f'manager:gap:{str(gap["gap_chat_id"])}')],)
-
+    
     return InlineKeyboardMarkup(buttons)

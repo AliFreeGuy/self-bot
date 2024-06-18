@@ -46,18 +46,122 @@ async def account_manager_handler(client , call ):
         
         elif status == 'create_session' :
             await create_session(client , call )
+
+#         elif status == 'auto_answer' :
+#             await auto_answer(client , call )
+
+#         elif status == 'msg_timer' :
+#             await msg_timer(client , call)
             
         
+
+
+
+# async def auto_answer(bot , call ):
+#     user_phone = call.data.split(':')[2]
+#     answer = None
+#     question = None 
+#     day_limit = None 
+
+
+
+#     try :
+        
+#         answer = await bot.ask(call.from_user.id  , text.a_text , timeout = 60)
+#     except :await deleter(bot , call , call.message.id +1   )
+
+
+#     try :
+        
+#         question = await bot.ask(call.from_user.id  , text.q_text, timeout = 60)
+#     except :await deleter(bot , call , call.message.id +1   )
+
+
+#     try :
+        
+#         day_limit = await bot.ask(call.from_user.id  , text.day_limit ,timeout = 60)
+#     except :await deleter(bot , call , call.message.id +1   )
+    
+
+
+#     if answer and answer.text :
+#         if question :
+#             if day_limit and day_limit.text  :
+#                 if day_limit.text.isdigit():
+
+
+#                     answer_key  = f'autoAnswer:{user_phone}:{str(random_code())}'
+#                     answer_data = {
+#                                         'phone' : user_phone  ,
+#                                         'answer' : answer.text ,
+#                                         'question' : str(question.message.id) ,
+#                                         'chat_id' : str(call.from_user.id) , 
+#                                         'limit' : str(day_limit.text)
+#                                         }
+#                     cache.redis.hmset(answer_key , answer_data)
+
+            
+#             else :await deleter(bot , call , call.message.id +1   )
+#         else :await deleter(bot , call , call.message.id +1   )
+#     else :await deleter(bot , call , call.message.id +1   )
+
+    
+    
+    
+
+
+
+
+
+
+
+
+
+# async def msg_timer(bot , msg ):
+#     print('fuck you user ')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 async def create_session(client , call ):
     phone_number = call.data.split(':')[2]
     account_key = f'account:{phone_number}'
     account_data = cache.get_account(account_key)
-    
 
-
-    
     if phone_number  and check_phone_number(phone_number) :
         phone_number = phone_number
         session_name = str(random_code())
@@ -138,33 +242,7 @@ async def create_session(client , call ):
     
 
 
-async def account_gap_manager(client , call ):
-    gap_chat_id = call.data.split(":")[2]
-    gap_key = f'*:{str(gap_chat_id)}'
-    get_gap_data = cache.redis.keys(gap_key)
-    if get_gap_data :
-        gap_data = cache.redis.hgetall(get_gap_data[0])
-        if gap_data :
-            status = cache.redis.hget(get_gap_data[0]  ,'status')
-            if status == 'off' :cache.redis.hset(get_gap_data[0] ,'status'  , 'on')
-            else :cache.redis.hset(get_gap_data[0] ,'status' ,'off')
 
-
-
-
-            account_phone = gap_data['phone']
-
-            account_data = cache.redis.hgetall(f'account:{account_phone}')
-            account_gaps = get_user_gap(account_phone)
-            if account_data : 
-                try :
-                    await client.edit_message_text(chat_id = call.from_user.id ,
-                                                        text = text.account_manager(account_data['phone']) ,
-                                                        reply_markup = btn.account_manager(account_data , account_gaps),
-                                                        message_id = call.message.id)
-                except Exception as e  :
-                    print(e)
-                
 
 async def change_status_account(client , call ):
     account_data = cache.redis.hgetall(f'account:{call.data.split(":")[2]}')
@@ -191,7 +269,7 @@ async def account_manager(clietn ,call ):
         try :
             await clietn.edit_message_text(chat_id = call.from_user.id ,
                                                 text = text.account_manager(account_data['phone']) ,
-                                                reply_markup = btn.account_manager(account_data , account_gaps),
+                                                reply_markup = btn.account_manager(account_data ),
                                                 message_id = call.message.id)
         except Exception as e  :
             print(e)
