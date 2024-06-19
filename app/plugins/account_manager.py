@@ -47,83 +47,39 @@ async def account_manager_handler(client , call ):
         elif status == 'create_session' :
             await create_session(client , call )
 
-#         elif status == 'auto_answer' :
-#             await auto_answer(client , call )
-
-#         elif status == 'msg_timer' :
-#             await msg_timer(client , call)
+        elif status == 'user_manager' : 
+            await user_manager(client , call )
+        
+        elif status == 'back_account' : 
+            await back_to_account_manager(client , call )
             
-        
 
 
 
-# async def auto_answer(bot , call ):
-#     user_phone = call.data.split(':')[2]
-#     answer = None
-#     question = None 
-#     day_limit = None 
+async def back_to_account_manager(bot , call ):
+    phone = call.data.split(':')[2]
+    account_data = cache.redis.hgetall(f'account:{phone}')
+    try :
+        await bot.edit_message_text(chat_id = call.from_user.id ,
+                                            text = text.account_manager(phone) ,
+                                            reply_markup = btn.account_manager(account_data ),
+                                            message_id = call.message.id)
+    except Exception as e  :
+        print(e)
+        pass
 
 
-
-#     try :
-        
-#         answer = await bot.ask(call.from_user.id  , text.a_text , timeout = 60)
-#     except :await deleter(bot , call , call.message.id +1   )
-
-
-#     try :
-        
-#         question = await bot.ask(call.from_user.id  , text.q_text, timeout = 60)
-#     except :await deleter(bot , call , call.message.id +1   )
-
-
-#     try :
-        
-#         day_limit = await bot.ask(call.from_user.id  , text.day_limit ,timeout = 60)
-#     except :await deleter(bot , call , call.message.id +1   )
-    
-
-
-#     if answer and answer.text :
-#         if question :
-#             if day_limit and day_limit.text  :
-#                 if day_limit.text.isdigit():
-
-
-#                     answer_key  = f'autoAnswer:{user_phone}:{str(random_code())}'
-#                     answer_data = {
-#                                         'phone' : user_phone  ,
-#                                         'answer' : answer.text ,
-#                                         'question' : str(question.message.id) ,
-#                                         'chat_id' : str(call.from_user.id) , 
-#                                         'limit' : str(day_limit.text)
-#                                         }
-#                     cache.redis.hmset(answer_key , answer_data)
-
-            
-#             else :await deleter(bot , call , call.message.id +1   )
-#         else :await deleter(bot , call , call.message.id +1   )
-#     else :await deleter(bot , call , call.message.id +1   )
-
-    
-    
-    
-
-
-
-
-
-
-
-
-
-# async def msg_timer(bot , msg ):
-#     print('fuck you user ')
-
-
-
-
-
+async def user_manager(bot , call ):
+    phone = call.data.split(':')[2]
+    users = [cache.redis.hgetall(user) for user in cache.redis.keys(f'user:{phone}:*')]
+    try :
+        await bot.edit_message_text(chat_id = call.from_user.id ,
+                                            text = text.user_manager ,
+                                            reply_markup = btn.user_manager_btn(users , phone ),
+                                            message_id = call.message.id)
+    except Exception as e  :
+        print(e)
+        pass
 
 
 

@@ -7,6 +7,7 @@ from config import ADMIN
 
 
 @Client.on_callback_query(f.is_admin , group=0)
+
 async def admin_manager_handler(client , call ):
     logger.warning(f'callback data : {call.data}  - user : {call.from_user.id }')
 
@@ -30,6 +31,8 @@ async def admin_manager_handler(client , call ):
 
         elif status == 'add_admin' :
             await add_admin(client , call )
+        
+        
 
 
 

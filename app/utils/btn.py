@@ -1,7 +1,7 @@
 from pyrogram.types import (ReplyKeyboardMarkup, InlineKeyboardMarkup,InlineKeyboardButton , KeyboardButton , WebAppData , WebAppInfo)
 from config import ADMIN
-
-
+import datetime
+import jdatetime
 
 def manager_btn(chat_id ):
     buttons = []
@@ -58,12 +58,51 @@ def account_manager(data ):
         InlineKeyboardButton(text='ایجاد سشن',callback_data=f'manager:create_session:{data["phone"]}'),        
         ])
     
+
+    buttons.append([
+        InlineKeyboardButton(text='مدیریت کاربران',callback_data=f'manager:user_manager:{data["phone"]}'),        
+        ])
+    
+
     buttons.append([
 
         InlineKeyboardButton(text='🔙',callback_data='manager:back_to_accounts'),
         InlineKeyboardButton(text='❌',callback_data=f'manager:remove_account:{data["phone"]}'),
         
         ])
+    
+
+    
+    return InlineKeyboardMarkup(buttons)
+
+
+def user_manager_btn(users , phone ):
+     
+    buttons = []
+    buttons.append([
+        InlineKeyboardButton(text='🔙',callback_data=f'manager:back_account:{phone}'),        
+        ])
+    for user in users :
+        try :
+            start_date_timestamp = float(user['start_date'])
+            end_date_timestamp = float(user['end_date'])
+            start_date_gregorian = datetime.datetime.fromtimestamp(start_date_timestamp)
+            end_date_gregorian = datetime.datetime.fromtimestamp(end_date_timestamp)
+            current_datetime = datetime.datetime.now()
+            time_left_delta = end_date_gregorian - current_datetime
+            days_left = time_left_delta.days
+            start_date_shamsi = jdatetime.datetime.fromgregorian(datetime=start_date_gregorian)
+            end_date_shamsi = jdatetime.datetime.fromgregorian(datetime=end_date_gregorian)
+            start = start_date_shamsi.strftime('%m/%d')
+            end = end_date_shamsi.strftime('%m/%d')
+            day = str(days_left)
+            buttons.append([
+            InlineKeyboardButton(text=f"{user['name']} - {start} - {end} - {day}",url=f'tg://openmessage?user_id={user["chat_id"]}'),        
+            ])
+        except Exception as e :
+            print(e)
+            continue
+
     
 
     
