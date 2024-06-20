@@ -58,6 +58,9 @@ async def account_manager_handler(client , call ):
         
         elif status.startswith('rma_'):
             await remove_answer(client , call)
+
+        elif status.startswith('rmt_'):
+            await remove_timer(client , call )
             
 
 
@@ -73,20 +76,29 @@ async def remove_answer(bot , call ):
     await msg_manager(bot , call)
 
 
-
+async def remove_timer(bot , call ):
+    print('remove time')
+    phone  = call.data.split(':')[2]
+    t_id = call.data.split(':')[1].replace('rmt_' , '')
+    timer_key =f'timer:{phone}:{t_id}'
+    print(timer_key)
+    cache.redis.delete(timer_key)
+    await msg_manager(bot , call)
 
 async def msg_manager(bot , call ):
     phone_number = call.data.split(':')[2]
     answer_keys = cache.redis.keys(f'answer:{phone_number}:*')
     answers = [cache.redis.hgetall(a) for a in answer_keys]
-    
+
+    timer_key = cache.redis.keys(f'timer:{phone_number}:*')
+    timers = [cache.redis.hgetall(t) for t in timer_key]
 
     
 
     try :
         await bot.edit_message_text(chat_id = call.from_user.id ,
                                             text = text.ansers_manager,
-                                            reply_markup = btn.answer_manager(answers ,phone_number ),
+                                            reply_markup = btn.answer_manager(answers ,phone_number , timers ),
                                             message_id = call.message.id)
     except Exception as e  :
         print(e)

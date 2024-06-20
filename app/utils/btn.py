@@ -112,7 +112,7 @@ def user_manager_btn(users , phone ):
 
 
 
-def answer_manager(answers , phone  ):
+def answer_manager(answers , phone , timers ):
     buttons = []
     buttons.append([
     InlineKeyboardButton(text='🔙',callback_data=f'manager:back_account:{phone}'),        
@@ -122,8 +122,24 @@ def answer_manager(answers , phone  ):
         limit_text = f'⏱ {str(answer["limit"]) if answer.get("limit") else ""} -'
         text = f'{limit_text if answer.get("limit") else ""} {answer["answer"]}'
         buttons.append([
-
             InlineKeyboardButton(text=text,callback_data=f'manager:rma_{str(answer["id"])}:{phone}'),        
             ])
+        
+    
+    for timer in timers :
+        
+        
+        if int(timer['timer']) <= 0 :
+            timer_status_text = f'⏰ تایمر {str(timer["timer"].replace("-" , ""))} روز مانده به پایان'
+        else : timer_status_text = f'⏰ تایمر {str(timer["timer"])} روز بعد از شروع'
+
+        
+
+        # text = f'{limit_text if answer.get("limit") else ""} {answer["answer"]}'
+        buttons.append([
+            InlineKeyboardButton(text=timer_status_text,callback_data=f'manager:rmt_{str(timer["id"])}:{phone}'),        
+            ])
+        
+
     
     return InlineKeyboardMarkup(buttons)
