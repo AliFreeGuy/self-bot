@@ -61,6 +61,7 @@ def account_manager(data ):
 
     buttons.append([
         InlineKeyboardButton(text='مدیریت کاربران',callback_data=f'manager:user_manager:{data["phone"]}'),        
+        InlineKeyboardButton(text='مدیریت پیامها',callback_data=f'manager:msg_manager:{data["phone"]}'),        
         ])
     
 
@@ -105,5 +106,24 @@ def user_manager_btn(users , phone ):
 
     
 
+    
+    return InlineKeyboardMarkup(buttons)
+
+
+
+
+def answer_manager(answers , phone  ):
+    buttons = []
+    buttons.append([
+    InlineKeyboardButton(text='🔙',callback_data=f'manager:back_account:{phone}'),        
+    ])
+
+    for answer in answers :
+        limit_text = f'⏱ {str(answer["limit"]) if answer.get("limit") else ""} -'
+        text = f'{limit_text if answer.get("limit") else ""} {answer["answer"]}'
+        buttons.append([
+
+            InlineKeyboardButton(text=text,callback_data=f'manager:rma_{str(answer["id"])}:{phone}'),        
+            ])
     
     return InlineKeyboardMarkup(buttons)

@@ -52,7 +52,47 @@ async def account_manager_handler(client , call ):
         
         elif status == 'back_account' : 
             await back_to_account_manager(client , call )
+        
+        elif status == 'msg_manager' :
+            await msg_manager(client , call )
+        
+        elif status.startswith('rma_'):
+            await remove_answer(client , call)
             
+
+
+
+
+
+
+
+async def remove_answer(bot , call ):
+    phone  = call.data.split(':')[2]
+    a_id = call.data.split(':')[1].replace('rma_' , '')
+    cache.redis.delete(f'answer:{phone}:{a_id}')
+    await msg_manager(bot , call)
+
+
+
+
+async def msg_manager(bot , call ):
+    phone_number = call.data.split(':')[2]
+    answer_keys = cache.redis.keys(f'answer:{phone_number}:*')
+    answers = [cache.redis.hgetall(a) for a in answer_keys]
+    
+
+    
+
+    try :
+        await bot.edit_message_text(chat_id = call.from_user.id ,
+                                            text = text.ansers_manager,
+                                            reply_markup = btn.answer_manager(answers ,phone_number ),
+                                            message_id = call.message.id)
+    except Exception as e  :
+        print(e)
+        pass
+
+
 
 
 
@@ -80,30 +120,6 @@ async def user_manager(bot , call ):
     except Exception as e  :
         print(e)
         pass
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
