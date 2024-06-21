@@ -2909,3 +2909,208 @@ AttributeError: 'str' object has no attribute 'startswiht'
 [1;92mINFO [2024-06-20 16:07:37 - connection.py:66] - Disconnected[0m
 [1;92mINFO [2024-06-20 16:07:37 - session.py:315] - NetworkTask stopped[0m
 [1;92mINFO [2024-06-20 16:07:37 - session.py:180] - Session stopped[0m
+[1;92mINFO [2024-06-21 09:08:42 - auth.py:82] - Start creating a new auth key on DC2[0m
+[1;92mINFO [2024-06-21 09:08:42 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-21 09:08:42 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-06-21 09:08:43 - connection.py:54] - Connected! Production DC2 - IPv4[0m
+[1;92mINFO [2024-06-21 09:08:45 - auth.py:267] - Done auth key exchange: DhGenOk[0m
+[1;92mINFO [2024-06-21 09:08:45 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-06-21 09:08:45 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-21 09:08:45 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-06-21 09:08:45 - connection.py:54] - Connected! Production DC2 - IPv4[0m
+[1;92mINFO [2024-06-21 09:08:45 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-06-21 09:08:46 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-06-21 09:08:46 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-06-21 09:08:46 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-06-21 09:08:46 - session.py:155] - Session started[0m
+[1;92mINFO [2024-06-21 09:08:46 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-06-21 09:08:46 - session.py:291] - PingTask stopped[0m
+[1;92mINFO [2024-06-21 09:08:46 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-06-21 09:08:46 - session.py:315] - NetworkTask stopped[0m
+[1;92mINFO [2024-06-21 09:08:46 - session.py:180] - Session stopped[0m
+[1;92mINFO [2024-06-21 09:08:46 - auth.py:82] - Start creating a new auth key on DC4[0m
+[1;92mINFO [2024-06-21 09:08:46 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-21 09:08:46 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-06-21 09:08:47 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-06-21 09:08:48 - auth.py:267] - Done auth key exchange: DhGenOk[0m
+[1;92mINFO [2024-06-21 09:08:48 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-06-21 09:08:48 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-21 09:08:48 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-06-21 09:08:49 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-06-21 09:08:49 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-06-21 09:08:50 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-06-21 09:08:50 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-06-21 09:08:50 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-06-21 09:08:50 - session.py:155] - Session started[0m
+[1;92mINFO [2024-06-21 09:08:50 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-06-21 09:08:51 - client.py:698] - [selfbot] [LOAD] CallbackQueryHandler("account_manager_handler") in group 1 from "plugins.account_manager"[0m
+[1;92mINFO [2024-06-21 09:08:51 - client.py:698] - [selfbot] [LOAD] CallbackQueryHandler("admin_manager_handler") in group 0 from "plugins.admin_manager"[0m
+[1;92mINFO [2024-06-21 09:08:51 - client.py:698] - [selfbot] [LOAD] MessageHandler("start_manager") in group 0 from "plugins.start_command"[0m
+[1;92mINFO [2024-06-21 09:08:51 - client.py:698] - [selfbot] [LOAD] MessageHandler("user_not_admin") in group 0 from "plugins.start_command"[0m
+[1;92mINFO [2024-06-21 09:08:51 - client.py:775] - [selfbot] Successfully loaded 4 plugins from "plugins"[0m
+[1;92mINFO [2024-06-21 09:08:51 - dispatcher.py:154] - Started 8 HandlerTasks[0m
+[1;92mINFO [2024-06-21 09:08:51 - start_command.py:16] - command : /start   -   user : 5522477996[0m
+[1;93mWARNING [2024-06-21 09:08:53 - admin_manager.py:12] - callback data : manager:accounts  - user : 5522477996[0m
+[1;93mWARNING [2024-06-21 09:08:55 - admin_manager.py:12] - callback data : manager:manage:+13182391021  - user : 5522477996[0m
+[1;93mWARNING [2024-06-21 09:08:57 - admin_manager.py:12] - callback data : manager:msg_manager:+13182391021  - user : 5522477996[0m
+[1;92mINFO [2024-06-21 09:09:03 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-06-21 09:09:05 - dispatcher.py:167] - Stopped 8 HandlerTasks[0m
+[1;92mINFO [2024-06-21 09:09:05 - session.py:291] - PingTask stopped[0m
+[1;92mINFO [2024-06-21 09:09:05 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-06-21 09:09:05 - session.py:315] - NetworkTask stopped[0m
+[1;92mINFO [2024-06-21 09:09:05 - session.py:180] - Session stopped[0m
+[1;92mINFO [2024-06-21 09:09:45 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-21 09:09:45 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-06-21 09:09:45 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-06-21 09:09:45 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-06-21 09:09:45 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-06-21 09:09:45 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-06-21 09:09:45 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-06-21 09:09:45 - session.py:155] - Session started[0m
+[1;92mINFO [2024-06-21 09:09:45 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-06-21 09:09:46 - client.py:698] - [selfbot] [LOAD] CallbackQueryHandler("account_manager_handler") in group 1 from "plugins.account_manager"[0m
+[1;92mINFO [2024-06-21 09:09:46 - client.py:698] - [selfbot] [LOAD] CallbackQueryHandler("admin_manager_handler") in group 0 from "plugins.admin_manager"[0m
+[1;92mINFO [2024-06-21 09:09:46 - client.py:698] - [selfbot] [LOAD] MessageHandler("start_manager") in group 0 from "plugins.start_command"[0m
+[1;92mINFO [2024-06-21 09:09:46 - client.py:698] - [selfbot] [LOAD] MessageHandler("user_not_admin") in group 0 from "plugins.start_command"[0m
+[1;92mINFO [2024-06-21 09:09:46 - client.py:775] - [selfbot] Successfully loaded 4 plugins from "plugins"[0m
+[1;92mINFO [2024-06-21 09:09:46 - dispatcher.py:154] - Started 8 HandlerTasks[0m
+[1;93mWARNING [2024-06-21 09:09:46 - admin_manager.py:12] - callback data : manager:back_account:+13182391021  - user : 5522477996[0m
+[1;93mWARNING [2024-06-21 09:09:49 - admin_manager.py:12] - callback data : manager:msg_manager:+13182391021  - user : 5522477996[0m
+[1;92mINFO [2024-06-21 09:33:57 - session.py:315] - NetworkTask stopped[0m
+[1;92mINFO [2024-06-21 09:33:57 - session.py:291] - PingTask stopped[0m
+[1;92mINFO [2024-06-21 09:33:57 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-06-21 09:33:57 - session.py:180] - Session stopped[0m
+[1;92mINFO [2024-06-21 09:33:57 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-21 09:33:57 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-06-21 09:34:01 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-06-21 09:34:01 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-06-21 09:34:02 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-06-21 09:34:02 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-06-21 09:34:02 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-06-21 09:34:02 - session.py:155] - Session started[0m
+[1;92mINFO [2024-06-21 09:34:02 - session.py:272] - PingTask started[0m
+[1;93mWARNING [2024-06-21 09:41:36 - admin_manager.py:12] - callback data : manager:rma_33483:+13182391021  - user : 5522477996[0m
+[1;93mWARNING [2024-06-21 09:41:38 - admin_manager.py:12] - callback data : manager:back_account:+13182391021  - user : 5522477996[0m
+[1;93mWARNING [2024-06-21 09:41:40 - admin_manager.py:12] - callback data : manager:msg_manager:+13182391021  - user : 5522477996[0m
+[1;92mINFO [2024-06-21 09:58:23 - session.py:315] - NetworkTask stopped[0m
+[1;92mINFO [2024-06-21 09:58:23 - session.py:291] - PingTask stopped[0m
+[1;92mINFO [2024-06-21 09:58:23 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-06-21 09:58:23 - session.py:180] - Session stopped[0m
+[1;92mINFO [2024-06-21 09:58:23 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-21 09:58:23 - connection.py:47] - Connecting...[0m
+[1;93mWARNING [2024-06-21 09:58:33 - connection.py:50] - Unable to connect due to network issues: Socket error: timed out[0m
+[1;92mINFO [2024-06-21 09:58:34 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-21 09:58:34 - connection.py:47] - Connecting...[0m
+[1;93mWARNING [2024-06-21 09:58:34 - connection.py:50] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-06-21 09:58:35 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-21 09:58:35 - connection.py:47] - Connecting...[0m
+[1;93mWARNING [2024-06-21 09:58:35 - connection.py:50] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;93mWARNING [2024-06-21 09:58:36 - connection.py:61] - Connection failed! Trying again...[0m
+[1;92mINFO [2024-06-21 09:58:36 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-06-21 09:58:36 - session.py:180] - Session stopped[0m
+[1;92mINFO [2024-06-21 09:58:36 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-21 09:58:36 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-06-21 09:58:37 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-06-21 09:58:37 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-06-21 09:58:37 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-06-21 09:58:37 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-06-21 09:58:37 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-06-21 09:58:37 - session.py:155] - Session started[0m
+[1;92mINFO [2024-06-21 09:58:37 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-06-21 11:12:19 - session.py:315] - NetworkTask stopped[0m
+[1;92mINFO [2024-06-21 11:12:19 - session.py:291] - PingTask stopped[0m
+[1;92mINFO [2024-06-21 11:12:19 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-06-21 11:12:19 - session.py:180] - Session stopped[0m
+[1;92mINFO [2024-06-21 11:12:19 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-21 11:12:19 - connection.py:47] - Connecting...[0m
+[1;93mWARNING [2024-06-21 11:12:29 - connection.py:50] - Unable to connect due to network issues: Socket error: timed out[0m
+[1;92mINFO [2024-06-21 11:12:30 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-21 11:12:30 - connection.py:47] - Connecting...[0m
+[1;93mWARNING [2024-06-21 11:12:40 - connection.py:50] - Unable to connect due to network issues: Socket error: timed out[0m
+[1;92mINFO [2024-06-21 11:12:41 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-21 11:12:41 - connection.py:47] - Connecting...[0m
+[1;93mWARNING [2024-06-21 11:12:51 - connection.py:50] - Unable to connect due to network issues: Socket error: timed out[0m
+[1;93mWARNING [2024-06-21 11:12:52 - connection.py:61] - Connection failed! Trying again...[0m
+[1;92mINFO [2024-06-21 11:12:52 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-06-21 11:12:52 - session.py:180] - Session stopped[0m
+[1;92mINFO [2024-06-21 11:12:52 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-21 11:12:52 - connection.py:47] - Connecting...[0m
+[1;93mWARNING [2024-06-21 11:13:02 - connection.py:50] - Unable to connect due to network issues: Socket error: timed out[0m
+[1;92mINFO [2024-06-21 11:13:03 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-21 11:13:03 - connection.py:47] - Connecting...[0m
+[1;93mWARNING [2024-06-21 11:13:13 - connection.py:50] - Unable to connect due to network issues: Socket error: timed out[0m
+[1;92mINFO [2024-06-21 11:13:14 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-21 11:13:14 - connection.py:47] - Connecting...[0m
+[1;93mWARNING [2024-06-21 11:13:24 - connection.py:50] - Unable to connect due to network issues: Socket error: timed out[0m
+[1;93mWARNING [2024-06-21 11:13:25 - connection.py:61] - Connection failed! Trying again...[0m
+[1;92mINFO [2024-06-21 11:13:25 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-06-21 11:13:25 - session.py:180] - Session stopped[0m
+[1;92mINFO [2024-06-21 11:13:25 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-21 11:13:25 - connection.py:47] - Connecting...[0m
+[1;93mWARNING [2024-06-21 11:13:33 - connection.py:50] - Unable to connect due to network issues: Socket error: Connection closed unexpectedly[0m
+[1;92mINFO [2024-06-21 11:13:34 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-21 11:13:34 - connection.py:47] - Connecting...[0m
+[1;93mWARNING [2024-06-21 11:13:34 - connection.py:50] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-06-21 11:13:35 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-21 11:13:35 - connection.py:47] - Connecting...[0m
+[1;93mWARNING [2024-06-21 11:13:35 - connection.py:50] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;93mWARNING [2024-06-21 11:13:36 - connection.py:61] - Connection failed! Trying again...[0m
+[1;92mINFO [2024-06-21 11:13:36 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-06-21 11:13:36 - session.py:180] - Session stopped[0m
+[1;92mINFO [2024-06-21 11:13:36 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-21 11:13:36 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-06-21 11:13:36 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-06-21 11:13:36 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-06-21 11:13:37 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-06-21 11:13:37 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-06-21 11:13:37 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-06-21 11:13:37 - session.py:155] - Session started[0m
+[1;92mINFO [2024-06-21 11:13:37 - session.py:272] - PingTask started[0m
+[1;93mWARNING [2024-06-21 11:15:27 - admin_manager.py:12] - callback data : manager:back_account:+13182391021  - user : 5522477996[0m
+[1;93mWARNING [2024-06-21 11:15:29 - admin_manager.py:12] - callback data : manager:msg_manager:+13182391021  - user : 5522477996[0m
+[1;93mWARNING [2024-06-21 11:15:32 - admin_manager.py:12] - callback data : manager:rmt_96371:+13182391021  - user : 5522477996[0m
+[1;93mWARNING [2024-06-21 11:15:33 - admin_manager.py:12] - callback data : manager:rmt_41480:+13182391021  - user : 5522477996[0m
+[1;93mWARNING [2024-06-21 11:15:34 - admin_manager.py:12] - callback data : manager:back_account:+13182391021  - user : 5522477996[0m
+[1;93mWARNING [2024-06-21 11:15:36 - admin_manager.py:12] - callback data : manager:user_manager:+13182391021  - user : 5522477996[0m
+[1;93mWARNING [2024-06-21 11:15:38 - admin_manager.py:12] - callback data : manager:back_account:+13182391021  - user : 5522477996[0m
+[1;93mWARNING [2024-06-21 11:16:48 - admin_manager.py:12] - callback data : manager:create_session:+13182391021  - user : 5522477996[0m
+[1;92mINFO [2024-06-21 11:16:48 - auth.py:82] - Start creating a new auth key on DC2[0m
+[1;92mINFO [2024-06-21 11:16:48 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-21 11:16:48 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-06-21 11:16:48 - connection.py:54] - Connected! Production DC2 - IPv4[0m
+[1;92mINFO [2024-06-21 11:16:50 - auth.py:267] - Done auth key exchange: DhGenOk[0m
+[1;92mINFO [2024-06-21 11:16:50 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-06-21 11:16:50 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-21 11:16:50 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-06-21 11:16:50 - connection.py:54] - Connected! Production DC2 - IPv4[0m
+[1;92mINFO [2024-06-21 11:16:50 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-06-21 11:16:51 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-06-21 11:16:51 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-06-21 11:16:51 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-06-21 11:16:51 - session.py:155] - Session started[0m
+[1;92mINFO [2024-06-21 11:16:51 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-06-21 11:16:51 - session.py:291] - PingTask stopped[0m
+[1;92mINFO [2024-06-21 11:16:51 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-06-21 11:16:51 - session.py:315] - NetworkTask stopped[0m
+[1;92mINFO [2024-06-21 11:16:51 - session.py:180] - Session stopped[0m
+[1;92mINFO [2024-06-21 11:16:51 - auth.py:82] - Start creating a new auth key on DC4[0m
+[1;92mINFO [2024-06-21 11:16:51 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-21 11:16:51 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-06-21 11:16:52 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-06-21 11:16:54 - auth.py:267] - Done auth key exchange: DhGenOk[0m
+[1;92mINFO [2024-06-21 11:16:54 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-06-21 11:16:54 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-21 11:16:54 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-06-21 11:16:54 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-06-21 11:16:54 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-06-21 11:16:55 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-06-21 11:16:55 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-06-21 11:16:55 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-06-21 11:16:55 - session.py:155] - Session started[0m
+[1;92mINFO [2024-06-21 11:16:55 - session.py:272] - PingTask started[0m
+[1;93mWARNING [2024-06-21 11:17:05 - account_manager.py:184] - Telegram says: [401 SESSION_PASSWORD_NEEDED] - The two-step verification is enabled and a password is required (caused by "auth.SignIn")[0m
+[1;93mWARNING [2024-06-21 11:17:07 - account_manager.py:192] - BAGY9NIAuQeHqFcl_UdWHi8s0E_tYjBcY4rePhSk-Va-OxID0HPfpLkYad4Fvk2oleLGp1gf3fxEmU7_64gRc5YNgWIbb4h9YIcWeKQc0T8Cv2Kj4QeI4efXqRyrK0-x8RVYMpsscajX1RjvRj3bbXuFdubbd17M2sFIcNh3I8J03v4s46YhX5ReSn3EZ80vr_tn8py9V6XvzkZ0fsLd_AY6KJtxg0lx9f8cFjEMyRQEx11s35PtysbgLlLyZ9uPzxgb4nxDoLwKzD5RHF1onpw8sqyYxI-wEroNI40AtbolKQpAImxERL7Z_KdFCkXCR3bwhrQ7VA94DbN0qukmzRouYPGbdAAAAAFJKlOsAA[0m
+[1;92mINFO [2024-06-21 11:17:08 - session.py:291] - PingTask stopped[0m
+[1;92mINFO [2024-06-21 11:17:08 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-06-21 11:17:08 - session.py:315] - NetworkTask stopped[0m
+[1;92mINFO [2024-06-21 11:17:08 - session.py:180] - Session stopped[0m
