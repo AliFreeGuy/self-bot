@@ -15,7 +15,6 @@ async def admin_manager_handler(client , call ):
     status = data[1]
   
     if data[0] == 'manager' :
-      
 
         if status == 'admins'  :
             await admin_manager(client , call )

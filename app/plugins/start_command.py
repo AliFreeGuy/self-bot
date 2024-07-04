@@ -12,6 +12,7 @@ from utils.utils import set_user_gap , get_user_gap ,random_code
 
 @Client.on_message( f.is_admin , group=0)
 async def start_manager(bot, msg):
+    print('hi user ')
     if msg.text and msg.text == '/start' : 
         logger.info(f'command : /start   -   user : {msg.from_user.id}' )
         await bot.send_message(msg.from_user.id , text.manager_text , reply_markup = btn.manager_btn(msg.from_user.id))
