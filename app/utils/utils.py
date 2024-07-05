@@ -74,30 +74,30 @@ async def alert(clietn, call , message= None  ):
 def run_docker(phone ):
     logger.warning(f'running container for phone : {str(phone)}')
     print(f'running container for phone : {str(phone)}')
-    # try :
-    #     account = cache.redis.hgetall(f'account:{phone}')
-    #     if account :
-    #         container_name = f"bot-{str(account['phone']).replace('+' , '')}"
-    #         image_name = FORWARDER_IMAGE_NAME
-    #         session_path = account['session_name']
+    try :
+        account = cache.redis.hgetall(f'account:{phone}')
+        if account :
+            container_name = f"bot-{str(account['phone']).replace('+' , '')}"
+            image_name = FORWARDER_IMAGE_NAME
+            session_path = account['session_name']
 
 
-    #         client = docker.from_env()
-    #         container = client.containers.run(
-    #                     image_name,
-    #                     name=container_name,
-    #                     environment={
-    #                         "API_HASH": API_HASH,
-    #                         "API_ID": API_ID,
-    #                         "SESSION_PATH": session_path,
-    #                         "BOT_USERNAME": BOT_USERNAME,
-    #                         'ACCOUNT_PHON' : phone.replace('+' , '')
-    #                     },
-    #                     detach=True 
-    #                 )
-    #         logger.warning(f'Container {container_name} started with ID: {container.id}')
+            client = docker.from_env()
+            container = client.containers.run(
+                        image_name,
+                        name=container_name,
+                        environment={
+                            "API_HASH": API_HASH,
+                            "API_ID": API_ID,
+                            "SESSION_PATH": session_path,
+                            "BOT_USERNAME": BOT_USERNAME,
+                            'ACCOUNT_PHON' : phone.replace('+' , '')
+                        },
+                        detach=True 
+                    )
+            logger.warning(f'Container {container_name} started with ID: {container.id}')
                 
-    # except Exception as e :logger.warning(e)
+    except Exception as e :logger.warning(e)
     
 
 
