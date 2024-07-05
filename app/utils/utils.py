@@ -3,7 +3,7 @@ from config import ADMIN , API_ID , API_HASH , BOT_USERNAME , FORWARDER_IMAGE_NA
 from . import text 
 import random
 import docker
-
+import config
 
 
 
@@ -74,31 +74,43 @@ async def alert(clietn, call , message= None  ):
 def run_docker(phone ):
     logger.warning(f'running container for phone : {str(phone)}')
     print(f'running container for phone : {str(phone)}')
-    # try :
-    #     account = cache.redis.hgetall(f'account:{phone}')
-    #     if account :
-    #         container_name = f"bot-{str(account['phone']).replace('+' , '')}"
-    #         image_name = FORWARDER_IMAGE_NAME
-    #         session_path = account['session_name']
-
-
-    #         client = docker.from_env()
-    #         container = client.containers.run(
-    #                     image_name,
-    #                     name=container_name,
-    #                     environment={
-    #                         "API_HASH": API_HASH,
-    #                         "API_ID": API_ID,
-    #                         "SESSION_PATH": session_path,
-    #                         "BOT_USERNAME": BOT_USERNAME,
-    #                         'ACCOUNT_PHON' : phone.replace('+' , '')
-    #                     },
-    #                     detach=True 
-    #                 )
-    #         logger.warning(f'Container {container_name} started with ID: {container.id}')
+    try:
+        account = cache.redis.hgetall(f'account:{str(phone)}')
+        if account:
+            container_name = f"self-{str(account['phone']).replace('+', '')}"
+            image_name = FORWARDER_IMAGE_NAME
+            session_string = account.get('session_name')
+            if session_string:
+                client = docker.from_env()
                 
-    # except Exception as e :logger.warning(e)
-    
+                # Check if a container with the same name exists
+                try:
+                    existing_container = client.containers.get(container_name)
+                    # Stop and remove the existing container
+                    existing_container.stop()
+                    existing_container.remove()
+                    logger.warning(f'Existing container {container_name} stopped and removed')
+                except docker.errors.NotFound:
+                    logger.warning(f'No existing container named {container_name} found')
+
+                container = client.containers.run(
+                    image_name,
+                    name=container_name,
+                    environment={
+                        "API_HASH": API_HASH,
+                        "API_ID": API_ID,
+                        "SESSION": session_string,
+                        'PHONE_NUMBER': phone,
+                        'REDIS_DB': config.REDIS_DB, 
+                        'REDIS_HOST': config.REDIS_HOST,
+                    },
+                    detach=True
+                )
+                logger.warning(f'Container {container_name} started with ID: {container.id}')
+            else:
+                logger.warning('<<< user not active session string >>>')
+    except Exception as e:
+        logger.warning(e)
 
 
 
