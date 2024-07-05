@@ -6,8 +6,11 @@ import jdatetime
 def manager_btn(chat_id ):
     buttons = []
     buttons.append([InlineKeyboardButton(text='مدیریت اکانت ها',callback_data='manager:accounts')])
-    # if chat_id == ADMIN :
-    #     buttons.append([InlineKeyboardButton(text='مدیریت ادمین ها',callback_data='manager:admins')])
+    print(chat_id)
+    print(ADMIN)
+    if chat_id == ADMIN :
+
+        buttons.append([InlineKeyboardButton(text='مدیریت ادمین ها',callback_data='manager:admins')])
     return InlineKeyboardMarkup(buttons)
 
 
