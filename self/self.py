@@ -13,8 +13,16 @@ API_HASH=env.get('API_HASH')
 PHONE_NUMBER = env.get('PHONE_NUMBER')
 SESSION = env.get('SESSION')
 phone_number =PHONE_NUMBER
+REDIS_DB = env.get('REDIS_DB')
+REDIS_HOST = env.get('REDIS_HOST')
+print(API_ID)
+print(API_HASH)
+print(PHONE_NUMBER)
+print(SESSION)
+print(REDIS_DB)
+print(REDIS_HOST)
 
-r = redis.Redis(host='172.17.0.2' , port=6379 , db=0 , decode_responses=True)
+r = redis.Redis(host=REDIS_HOST , port=6379 , db=REDIS_DB , decode_responses=True)
 bot = Client(str(PHONE_NUMBER) , api_id = API_ID, api_hash = API_HASH  , session_string = SESSION)
 
 

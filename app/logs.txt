@@ -3685,3 +3685,808 @@ AttributeError: 'str' object has no attribute 'startswiht'
 [1;92mINFO [2024-07-05 09:15:50 - connection.py:66] - Disconnected[0m
 [1;92mINFO [2024-07-05 09:15:50 - session.py:315] - NetworkTask stopped[0m
 [1;92mINFO [2024-07-05 09:15:50 - session.py:180] - Session stopped[0m
+[1;92mINFO [2024-07-05 06:13:23 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-05 06:13:23 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-05 06:13:23 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-07-05 06:13:23 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-07-05 06:13:23 - session.py:140] - Device: CPython 3.8.10 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-07-05 06:13:23 - session.py:141] - System: Linux 5.4.0-182-generic (en)[0m
+[1;92mINFO [2024-07-05 06:13:23 - session.py:155] - Session started[0m
+[1;92mINFO [2024-07-05 06:13:23 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-07-05 06:13:23 - client.py:698] - [selfbot] [LOAD] CallbackQueryHandler("account_manager_handler") in group 1 from "plugins.account_manager"[0m
+[1;92mINFO [2024-07-05 06:13:23 - client.py:698] - [selfbot] [LOAD] CallbackQueryHandler("admin_manager_handler") in group 0 from "plugins.admin_manager"[0m
+[1;92mINFO [2024-07-05 06:13:23 - client.py:698] - [selfbot] [LOAD] MessageHandler("start_manager") in group 0 from "plugins.start_command"[0m
+[1;92mINFO [2024-07-05 06:13:23 - client.py:698] - [selfbot] [LOAD] MessageHandler("user_not_admin") in group 0 from "plugins.start_command"[0m
+[1;92mINFO [2024-07-05 06:13:23 - client.py:775] - [selfbot] Successfully loaded 4 plugins from "plugins"[0m
+[1;92mINFO [2024-07-05 06:13:23 - dispatcher.py:154] - Started 8 HandlerTasks[0m
+[1;92mINFO [2024-07-05 06:13:27 - start_command.py:17] - command : /start   -   user : 5522477996[0m
+[1;93mWARNING [2024-07-05 06:13:28 - admin_manager.py:12] - callback data : manager:accounts  - user : 5522477996[0m
+[1;93mWARNING [2024-07-05 06:13:30 - admin_manager.py:12] - callback data : manager:back  - user : 5522477996[0m
+[1;93mWARNING [2024-07-05 06:13:30 - admin_manager.py:12] - callback data : manager:admins  - user : 5522477996[0m
+[1;93mWARNING [2024-07-05 06:13:42 - admin_manager.py:12] - callback data : manager:add_admin  - user : 5522477996[0m
+[1;92mINFO [2024-07-05 06:13:52 - start_command.py:17] - command : /start   -   user : 5522477996[0m
+[1;93mWARNING [2024-07-05 06:13:54 - admin_manager.py:12] - callback data : manager:admins  - user : 5522477996[0m
+[1;92mINFO [2024-07-05 06:14:03 - start_command.py:17] - command : /start   -   user : 5512116521[0m
+[1;93mWARNING [2024-07-05 06:14:05 - admin_manager.py:12] - callback data : manager:accounts  - user : 5512116521[0m
+[1;93mWARNING [2024-07-05 06:14:09 - admin_manager.py:12] - callback data : manager:add_account  - user : 5512116521[0m
+[1;92mINFO [2024-07-05 06:14:28 - start_command.py:17] - command : /start   -   user : 5522477996[0m
+[1;93mWARNING [2024-07-05 06:14:29 - admin_manager.py:12] - callback data : manager:accounts  - user : 5522477996[0m
+[1;93mWARNING [2024-07-05 06:14:37 - admin_manager.py:12] - callback data : manager:add_account  - user : 5522477996[0m
+[1;91mERROR [2024-07-05 06:14:56 - dispatcher.py:253] - unable to open database file[0m
+Traceback (most recent call last):
+  File "/root/lab/test-self/venv/lib/python3.8/site-packages/pyrogram/dispatcher.py", line 242, in handler_worker
+    await self.loop.run_in_executor(
+  File "/usr/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/root/lab/test-self/venv/lib/python3.8/site-packages/pyrogram/sync.py", line 78, in async_to_sync_wrap
+    return asyncio.run_coroutine_threadsafe(coroutine, main_loop).result()
+  File "/usr/lib/python3.8/concurrent/futures/_base.py", line 444, in result
+    return self.__get_result()
+  File "/usr/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/root/lab/test-self/venv/lib/python3.8/site-packages/pyromod/listen/callback_query_handler.py", line 146, in resolve_future_or_callback
+    await self.original_callback(client, query, *args)
+  File "/root/lab/test-self/self-bot/app/plugins/account_manager.py", line 33, in account_manager_handler
+    await add_account(client , call )
+  File "/root/lab/test-self/self-bot/app/plugins/account_manager.py", line 307, in add_account
+    await account.connect()
+  File "/root/lab/test-self/venv/lib/python3.8/site-packages/pyrogram/methods/auth/connect.py", line 40, in connect
+    await self.load_session()
+  File "/root/lab/test-self/venv/lib/python3.8/site-packages/pyrogram/client.py", line 616, in load_session
+    await self.storage.open()
+  File "/root/lab/test-self/venv/lib/python3.8/site-packages/pyrogram/storage/file_storage.py", line 58, in open
+    self.conn = sqlite3.connect(str(path), timeout=1, check_same_thread=False)
+sqlite3.OperationalError: unable to open database file
+[1;92mINFO [2024-07-05 06:15:38 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-07-05 06:15:38 - dispatcher.py:167] - Stopped 8 HandlerTasks[0m
+[1;92mINFO [2024-07-05 06:15:38 - session.py:291] - PingTask stopped[0m
+[1;92mINFO [2024-07-05 06:15:38 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-07-05 06:15:38 - session.py:315] - NetworkTask stopped[0m
+[1;92mINFO [2024-07-05 06:15:38 - session.py:180] - Session stopped[0m
+[1;92mINFO [2024-07-05 06:20:11 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-05 06:20:11 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-05 06:20:11 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-07-05 06:20:11 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-07-05 06:20:11 - session.py:140] - Device: CPython 3.8.10 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-07-05 06:20:11 - session.py:141] - System: Linux 5.4.0-182-generic (en)[0m
+[1;92mINFO [2024-07-05 06:20:11 - session.py:155] - Session started[0m
+[1;92mINFO [2024-07-05 06:20:11 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-07-05 06:20:11 - client.py:698] - [selfbot] [LOAD] CallbackQueryHandler("account_manager_handler") in group 1 from "plugins.account_manager"[0m
+[1;92mINFO [2024-07-05 06:20:11 - client.py:698] - [selfbot] [LOAD] CallbackQueryHandler("admin_manager_handler") in group 0 from "plugins.admin_manager"[0m
+[1;92mINFO [2024-07-05 06:20:11 - client.py:698] - [selfbot] [LOAD] MessageHandler("start_manager") in group 0 from "plugins.start_command"[0m
+[1;92mINFO [2024-07-05 06:20:11 - client.py:698] - [selfbot] [LOAD] MessageHandler("user_not_admin") in group 0 from "plugins.start_command"[0m
+[1;92mINFO [2024-07-05 06:20:11 - client.py:775] - [selfbot] Successfully loaded 4 plugins from "plugins"[0m
+[1;92mINFO [2024-07-05 06:20:11 - dispatcher.py:154] - Started 8 HandlerTasks[0m
+[1;92mINFO [2024-07-05 06:20:18 - start_command.py:17] - command : /start   -   user : 5522477996[0m
+[1;93mWARNING [2024-07-05 06:20:19 - admin_manager.py:12] - callback data : manager:accounts  - user : 5522477996[0m
+[1;93mWARNING [2024-07-05 06:20:20 - admin_manager.py:12] - callback data : manager:back  - user : 5522477996[0m
+[1;93mWARNING [2024-07-05 06:20:21 - admin_manager.py:12] - callback data : manager:admins  - user : 5522477996[0m
+[1;93mWARNING [2024-07-05 06:20:22 - admin_manager.py:12] - callback data : manager:back  - user : 5522477996[0m
+[1;92mINFO [2024-07-05 06:20:28 - start_command.py:17] - command : /start   -   user : 5512116521[0m
+[1;93mWARNING [2024-07-05 06:20:38 - admin_manager.py:12] - callback data : manager:accounts  - user : 5522477996[0m
+[1;93mWARNING [2024-07-05 06:20:38 - admin_manager.py:12] - callback data : manager:add_account  - user : 5522477996[0m
+[1;92mINFO [2024-07-05 06:20:40 - auth.py:82] - Start creating a new auth key on DC2[0m
+[1;92mINFO [2024-07-05 06:20:40 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-05 06:20:40 - connection.py:54] - Connected! Production DC2 - IPv4[0m
+[1;92mINFO [2024-07-05 06:20:41 - auth.py:267] - Done auth key exchange: DhGenOk[0m
+[1;92mINFO [2024-07-05 06:20:41 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-07-05 06:20:41 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-05 06:20:41 - connection.py:54] - Connected! Production DC2 - IPv4[0m
+[1;92mINFO [2024-07-05 06:20:41 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-07-05 06:20:41 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-07-05 06:20:41 - session.py:140] - Device: CPython 3.8.10 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-07-05 06:20:41 - session.py:141] - System: Linux 5.4.0-182-generic (en)[0m
+[1;92mINFO [2024-07-05 06:20:41 - session.py:155] - Session started[0m
+[1;92mINFO [2024-07-05 06:20:41 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-07-05 06:20:41 - session.py:291] - PingTask stopped[0m
+[1;92mINFO [2024-07-05 06:20:41 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-07-05 06:20:41 - session.py:315] - NetworkTask stopped[0m
+[1;92mINFO [2024-07-05 06:20:41 - session.py:180] - Session stopped[0m
+[1;92mINFO [2024-07-05 06:20:41 - auth.py:82] - Start creating a new auth key on DC4[0m
+[1;92mINFO [2024-07-05 06:20:41 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-05 06:20:41 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-05 06:20:43 - auth.py:267] - Done auth key exchange: DhGenOk[0m
+[1;92mINFO [2024-07-05 06:20:43 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-07-05 06:20:43 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-05 06:20:43 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-05 06:20:43 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-07-05 06:20:43 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-07-05 06:20:43 - session.py:140] - Device: CPython 3.8.10 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-07-05 06:20:43 - session.py:141] - System: Linux 5.4.0-182-generic (en)[0m
+[1;92mINFO [2024-07-05 06:20:43 - session.py:155] - Session started[0m
+[1;92mINFO [2024-07-05 06:20:43 - session.py:272] - PingTask started[0m
+[1;93mWARNING [2024-07-05 06:20:49 - account_manager.py:338] - Telegram says: [401 SESSION_PASSWORD_NEEDED] - The two-step verification is enabled and a password is required (caused by "auth.SignIn")[0m
+[1;93mWARNING [2024-07-05 06:20:51 - account_manager.py:347] - BAFmC3UAl6oBlJOVnevTW5QyXDcJPK1hzC-u3qTR7asWwqaGvoaMExV1oMDwHJsW4zUUX9XRdb48_SkNwhokUN46zIm38ZWWDnk8SpUPHtbRlHX8m0EPfmjdjB3-zrVqlXy199_qKJyqmkj1NB5cPQE1YF-bER3BN6GEXspS49P_5fT-WwbojbsGHoeu6eOKLegCWHwQ4W88I1dn2PbsZfJL_Rz2SvpAvmxzVM-Z7WdszQ76n1WMl8hn75qdnCJBq0gcbv3hCDWfIdaN2-wvDPcIqeNp5cI-qEyiu_ruijI1yromGNe_Sg2x8wMiU-hCtgnCjJv7Sfm9p1mXuxrDuLFsD3T6qQAAAAFIjDkpAA[0m
+[1;92mINFO [2024-07-05 06:20:51 - session.py:291] - PingTask stopped[0m
+[1;92mINFO [2024-07-05 06:20:51 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-07-05 06:20:51 - session.py:315] - NetworkTask stopped[0m
+[1;92mINFO [2024-07-05 06:20:51 - session.py:180] - Session stopped[0m
+[1;93mWARNING [2024-07-05 06:20:51 - utils.py:75] - running container for phone : +46765147252[0m
+[1;93mWARNING [2024-07-05 06:20:53 - utils.py:102] - 404 Client Error for http+docker://localhost/v1.45/images/create?tag=latest&fromImage=userbot: Not Found ("pull access denied for userbot, repository does not exist or may require 'docker login': denied: requested access to the resource is denied")[0m
+[1;92mINFO [2024-07-05 06:21:07 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-07-05 06:21:11 - dispatcher.py:167] - Stopped 8 HandlerTasks[0m
+[1;92mINFO [2024-07-05 06:21:11 - session.py:291] - PingTask stopped[0m
+[1;92mINFO [2024-07-05 06:21:11 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-07-05 06:21:11 - session.py:315] - NetworkTask stopped[0m
+[1;92mINFO [2024-07-05 06:21:11 - session.py:180] - Session stopped[0m
+[1;92mINFO [2024-07-05 06:24:40 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-05 06:24:40 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-05 06:24:40 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-07-05 06:24:40 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-07-05 06:24:40 - session.py:140] - Device: CPython 3.8.10 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-07-05 06:24:40 - session.py:141] - System: Linux 5.4.0-182-generic (en)[0m
+[1;92mINFO [2024-07-05 06:24:40 - session.py:155] - Session started[0m
+[1;92mINFO [2024-07-05 06:24:40 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-07-05 06:24:40 - client.py:698] - [selfbot] [LOAD] CallbackQueryHandler("account_manager_handler") in group 1 from "plugins.account_manager"[0m
+[1;92mINFO [2024-07-05 06:24:40 - client.py:698] - [selfbot] [LOAD] CallbackQueryHandler("admin_manager_handler") in group 0 from "plugins.admin_manager"[0m
+[1;92mINFO [2024-07-05 06:24:40 - client.py:698] - [selfbot] [LOAD] MessageHandler("start_manager") in group 0 from "plugins.start_command"[0m
+[1;92mINFO [2024-07-05 06:24:40 - client.py:698] - [selfbot] [LOAD] MessageHandler("user_not_admin") in group 0 from "plugins.start_command"[0m
+[1;92mINFO [2024-07-05 06:24:40 - client.py:775] - [selfbot] Successfully loaded 4 plugins from "plugins"[0m
+[1;92mINFO [2024-07-05 06:24:40 - dispatcher.py:154] - Started 8 HandlerTasks[0m
+[1;92mINFO [2024-07-05 06:24:43 - start_command.py:17] - command : /start   -   user : 5522477996[0m
+[1;93mWARNING [2024-07-05 06:24:44 - admin_manager.py:12] - callback data : manager:accounts  - user : 5522477996[0m
+[1;93mWARNING [2024-07-05 06:24:46 - admin_manager.py:12] - callback data : manager:manage:+46765147252  - user : 5522477996[0m
+[1;93mWARNING [2024-07-05 06:24:47 - admin_manager.py:12] - callback data : manager:remove_account:+46765147252  - user : 5522477996[0m
+[1;93mWARNING [2024-07-05 06:24:48 - admin_manager.py:12] - callback data : manager:add_account  - user : 5522477996[0m
+[1;92mINFO [2024-07-05 06:24:57 - auth.py:82] - Start creating a new auth key on DC2[0m
+[1;92mINFO [2024-07-05 06:24:57 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-05 06:24:57 - connection.py:54] - Connected! Production DC2 - IPv4[0m
+[1;92mINFO [2024-07-05 06:24:58 - auth.py:267] - Done auth key exchange: DhGenOk[0m
+[1;92mINFO [2024-07-05 06:24:58 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-07-05 06:24:58 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-05 06:24:58 - connection.py:54] - Connected! Production DC2 - IPv4[0m
+[1;92mINFO [2024-07-05 06:24:58 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-07-05 06:24:58 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-07-05 06:24:58 - session.py:140] - Device: CPython 3.8.10 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-07-05 06:24:58 - session.py:141] - System: Linux 5.4.0-182-generic (en)[0m
+[1;92mINFO [2024-07-05 06:24:58 - session.py:155] - Session started[0m
+[1;92mINFO [2024-07-05 06:24:58 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-07-05 06:24:58 - session.py:291] - PingTask stopped[0m
+[1;92mINFO [2024-07-05 06:24:58 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-07-05 06:24:58 - session.py:315] - NetworkTask stopped[0m
+[1;92mINFO [2024-07-05 06:24:58 - session.py:180] - Session stopped[0m
+[1;92mINFO [2024-07-05 06:24:58 - auth.py:82] - Start creating a new auth key on DC4[0m
+[1;92mINFO [2024-07-05 06:24:58 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-05 06:24:58 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-05 06:24:59 - auth.py:267] - Done auth key exchange: DhGenOk[0m
+[1;92mINFO [2024-07-05 06:24:59 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-07-05 06:24:59 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-05 06:24:59 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-05 06:24:59 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-07-05 06:24:59 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-07-05 06:24:59 - session.py:140] - Device: CPython 3.8.10 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-07-05 06:24:59 - session.py:141] - System: Linux 5.4.0-182-generic (en)[0m
+[1;92mINFO [2024-07-05 06:24:59 - session.py:155] - Session started[0m
+[1;92mINFO [2024-07-05 06:24:59 - session.py:272] - PingTask started[0m
+[1;93mWARNING [2024-07-05 06:25:15 - account_manager.py:338] - Telegram says: [401 SESSION_PASSWORD_NEEDED] - The two-step verification is enabled and a password is required (caused by "auth.SignIn")[0m
+[1;93mWARNING [2024-07-05 06:25:17 - account_manager.py:347] - BAFmC3UAtBI6Dn4IJiInVygZU15WHRl1E_maJePyNfvd7t7DsYkhsBAXUzHS0RJ09CcrkHBrYHYNVOkBvza1OgVXgu5B3hSkGcBDPnEX1feNlNCPKkLoYcGkDgUhh5jRxd3ARSi2oqqF07SmFPjp8Au1TLVJ-YlkQBz5hChK-HNQ5tw1upM0LmMiVhwxymw_13gvxnt6-8QrKSV9Pnv2W28Yd7Bc3O8lV7NeBBnFeEP0hAcTDNuGo4qsv0kWBSeXwoXuCBMPntZvL0EqI-epetxjcKdgmJ3gruzVeJFBsq8nnGt7dQadbrKHXFV3Z35xucJkvexR-ZWXx76d7_Coo1PNHbXt2gAAAAFIjDkpAA[0m
+[1;92mINFO [2024-07-05 06:25:17 - session.py:291] - PingTask stopped[0m
+[1;92mINFO [2024-07-05 06:25:17 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-07-05 06:25:17 - session.py:315] - NetworkTask stopped[0m
+[1;92mINFO [2024-07-05 06:25:17 - session.py:180] - Session stopped[0m
+[1;93mWARNING [2024-07-05 06:25:17 - utils.py:75] - running container for phone : +46765147252[0m
+[1;93mWARNING [2024-07-05 06:25:18 - utils.py:100] - Container bot-46765147252 started with ID: bd620f2f22ef1e48691ae23f1b2d188e5ba8274dc39df303f55221c757e1008c[0m
+[1;92mINFO [2024-07-05 06:27:57 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-07-05 06:28:00 - dispatcher.py:167] - Stopped 8 HandlerTasks[0m
+[1;92mINFO [2024-07-05 06:28:00 - session.py:291] - PingTask stopped[0m
+[1;92mINFO [2024-07-05 06:28:00 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-07-05 06:28:00 - session.py:315] - NetworkTask stopped[0m
+[1;92mINFO [2024-07-05 06:28:00 - session.py:180] - Session stopped[0m
+[1;92mINFO [2024-07-05 06:31:34 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-05 06:31:34 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-05 06:31:34 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-07-05 06:31:34 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-07-05 06:31:34 - session.py:140] - Device: CPython 3.8.10 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-07-05 06:31:34 - session.py:141] - System: Linux 5.4.0-182-generic (en)[0m
+[1;92mINFO [2024-07-05 06:31:34 - session.py:155] - Session started[0m
+[1;92mINFO [2024-07-05 06:31:34 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-07-05 06:31:34 - client.py:698] - [selfbot] [LOAD] CallbackQueryHandler("account_manager_handler") in group 1 from "plugins.account_manager"[0m
+[1;92mINFO [2024-07-05 06:31:34 - client.py:698] - [selfbot] [LOAD] CallbackQueryHandler("admin_manager_handler") in group 0 from "plugins.admin_manager"[0m
+[1;92mINFO [2024-07-05 06:31:34 - client.py:698] - [selfbot] [LOAD] MessageHandler("start_manager") in group 0 from "plugins.start_command"[0m
+[1;92mINFO [2024-07-05 06:31:34 - client.py:698] - [selfbot] [LOAD] MessageHandler("user_not_admin") in group 0 from "plugins.start_command"[0m
+[1;92mINFO [2024-07-05 06:31:34 - client.py:775] - [selfbot] Successfully loaded 4 plugins from "plugins"[0m
+[1;92mINFO [2024-07-05 06:31:34 - dispatcher.py:154] - Started 8 HandlerTasks[0m
+[1;92mINFO [2024-07-05 06:31:40 - start_command.py:17] - command : /start   -   user : 5522477996[0m
+[1;92mINFO [2024-07-05 06:31:42 - start_command.py:17] - command : /start   -   user : 5522477996[0m
+[1;93mWARNING [2024-07-05 06:31:43 - admin_manager.py:12] - callback data : manager:accounts  - user : 5522477996[0m
+[1;93mWARNING [2024-07-05 06:31:45 - admin_manager.py:12] - callback data : manager:manage:+46765147252  - user : 5522477996[0m
+[1;93mWARNING [2024-07-05 06:31:47 - admin_manager.py:12] - callback data : manager:msg_manager:+46765147252  - user : 5522477996[0m
+[1;93mWARNING [2024-07-05 06:31:48 - admin_manager.py:12] - callback data : manager:back_account:+46765147252  - user : 5522477996[0m
+[1;93mWARNING [2024-07-05 06:31:49 - admin_manager.py:12] - callback data : manager:user_manager:+46765147252  - user : 5522477996[0m
+[1;93mWARNING [2024-07-05 06:31:50 - admin_manager.py:12] - callback data : manager:back_account:+46765147252  - user : 5522477996[0m
+[1;93mWARNING [2024-07-05 06:31:51 - admin_manager.py:12] - callback data : manager:remove_account:+46765147252  - user : 5522477996[0m
+[1;93mWARNING [2024-07-05 06:31:53 - admin_manager.py:12] - callback data : manager:add_account  - user : 5522477996[0m
+[1;92mINFO [2024-07-05 06:32:00 - auth.py:82] - Start creating a new auth key on DC2[0m
+[1;92mINFO [2024-07-05 06:32:00 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-05 06:32:00 - connection.py:54] - Connected! Production DC2 - IPv4[0m
+[1;92mINFO [2024-07-05 06:32:01 - auth.py:267] - Done auth key exchange: DhGenOk[0m
+[1;92mINFO [2024-07-05 06:32:01 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-07-05 06:32:01 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-05 06:32:01 - connection.py:54] - Connected! Production DC2 - IPv4[0m
+[1;92mINFO [2024-07-05 06:32:01 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-07-05 06:32:01 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-07-05 06:32:01 - session.py:140] - Device: CPython 3.8.10 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-07-05 06:32:01 - session.py:141] - System: Linux 5.4.0-182-generic (en)[0m
+[1;92mINFO [2024-07-05 06:32:01 - session.py:155] - Session started[0m
+[1;92mINFO [2024-07-05 06:32:01 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-07-05 06:32:01 - session.py:291] - PingTask stopped[0m
+[1;92mINFO [2024-07-05 06:32:01 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-07-05 06:32:01 - session.py:315] - NetworkTask stopped[0m
+[1;92mINFO [2024-07-05 06:32:01 - session.py:180] - Session stopped[0m
+[1;92mINFO [2024-07-05 06:32:01 - auth.py:82] - Start creating a new auth key on DC4[0m
+[1;92mINFO [2024-07-05 06:32:01 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-05 06:32:01 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-05 06:32:02 - auth.py:267] - Done auth key exchange: DhGenOk[0m
+[1;92mINFO [2024-07-05 06:32:02 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-07-05 06:32:02 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-05 06:32:02 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-05 06:32:02 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-07-05 06:32:02 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-07-05 06:32:02 - session.py:140] - Device: CPython 3.8.10 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-07-05 06:32:02 - session.py:141] - System: Linux 5.4.0-182-generic (en)[0m
+[1;92mINFO [2024-07-05 06:32:02 - session.py:155] - Session started[0m
+[1;92mINFO [2024-07-05 06:32:02 - session.py:272] - PingTask started[0m
+[1;93mWARNING [2024-07-05 06:32:18 - account_manager.py:338] - Telegram says: [401 SESSION_PASSWORD_NEEDED] - The two-step verification is enabled and a password is required (caused by "auth.SignIn")[0m
+[1;93mWARNING [2024-07-05 06:32:20 - account_manager.py:347] - BAFmC3UAbTJNmSDGfxZqHK1AwLF0qiaLdop58ACfktkqeuXn31kkejwds7mg1pNuYXnEt97n-XDxSGh3fbYRqPyFtCaGFs3-4qb0XsTy-okkb6hqRNKlC_P-Y1MTRf4z4n70HhpmgDivHnD5_zUn7jhlJw1yjxfgq2BxBcIhxRjzRORfeVBbOp2UnvCv1GbAGSgTMk10SP2xNgnVGFtvx7lfIPhOflvVDGzMXTTqUmBCS_rGc_7WDpddMFpToo4BTWaNVJquuX1rJ_ufzJKaD8smsDruRzpSGQTLYEAjSxQ_d_IT0JJ3e01Lf_dT1GlYYHa9lXE4xapYvOtqc2zlDw1VDHaf6QAAAAFIjDkpAA[0m
+[1;92mINFO [2024-07-05 06:32:20 - session.py:291] - PingTask stopped[0m
+[1;92mINFO [2024-07-05 06:32:20 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-07-05 06:32:20 - session.py:315] - NetworkTask stopped[0m
+[1;92mINFO [2024-07-05 06:32:20 - session.py:180] - Session stopped[0m
+[1;93mWARNING [2024-07-05 06:32:20 - utils.py:75] - running container for phone : +46765147252[0m
+[1;93mWARNING [2024-07-05 06:32:21 - utils.py:100] - Container bot-46765147252 started with ID: f2b2f80158ee78ee15b4c16869c0fb28adcb00b16f38acc2395fa18ea221621c[0m
+[1;92mINFO [2024-07-05 06:32:38 - start_command.py:17] - command : /start   -   user : 5512116521[0m
+[1;92mINFO [2024-07-05 06:33:42 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-07-05 06:33:44 - dispatcher.py:167] - Stopped 8 HandlerTasks[0m
+[1;92mINFO [2024-07-05 06:33:44 - session.py:291] - PingTask stopped[0m
+[1;92mINFO [2024-07-05 06:33:44 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-07-05 06:33:44 - session.py:315] - NetworkTask stopped[0m
+[1;92mINFO [2024-07-05 06:33:44 - session.py:180] - Session stopped[0m
+[1;92mINFO [2024-07-05 06:37:34 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-05 06:37:34 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-05 06:37:34 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-07-05 06:37:34 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-07-05 06:37:34 - session.py:140] - Device: CPython 3.8.10 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-07-05 06:37:34 - session.py:141] - System: Linux 5.4.0-182-generic (en)[0m
+[1;92mINFO [2024-07-05 06:37:34 - session.py:155] - Session started[0m
+[1;92mINFO [2024-07-05 06:37:34 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-07-05 06:37:34 - client.py:698] - [selfbot] [LOAD] CallbackQueryHandler("account_manager_handler") in group 1 from "plugins.account_manager"[0m
+[1;92mINFO [2024-07-05 06:37:34 - client.py:698] - [selfbot] [LOAD] CallbackQueryHandler("admin_manager_handler") in group 0 from "plugins.admin_manager"[0m
+[1;92mINFO [2024-07-05 06:37:34 - client.py:698] - [selfbot] [LOAD] MessageHandler("start_manager") in group 0 from "plugins.start_command"[0m
+[1;92mINFO [2024-07-05 06:37:34 - client.py:698] - [selfbot] [LOAD] MessageHandler("user_not_admin") in group 0 from "plugins.start_command"[0m
+[1;92mINFO [2024-07-05 06:37:34 - client.py:775] - [selfbot] Successfully loaded 4 plugins from "plugins"[0m
+[1;92mINFO [2024-07-05 06:37:34 - dispatcher.py:154] - Started 8 HandlerTasks[0m
+[1;92mINFO [2024-07-05 06:37:40 - start_command.py:17] - command : /start   -   user : 5512116521[0m
+[1;93mWARNING [2024-07-05 06:37:42 - admin_manager.py:12] - callback data : manager:accounts  - user : 5512116521[0m
+[1;93mWARNING [2024-07-05 06:37:44 - admin_manager.py:12] - callback data : manager:manage:+46765147252  - user : 5512116521[0m
+[1;93mWARNING [2024-07-05 06:37:45 - admin_manager.py:12] - callback data : manager:remove_account:+46765147252  - user : 5512116521[0m
+[1;93mWARNING [2024-07-05 06:37:47 - admin_manager.py:12] - callback data : manager:add_account  - user : 5512116521[0m
+[1;92mINFO [2024-07-05 06:37:54 - auth.py:82] - Start creating a new auth key on DC2[0m
+[1;92mINFO [2024-07-05 06:37:54 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-05 06:37:54 - connection.py:54] - Connected! Production DC2 - IPv4[0m
+[1;92mINFO [2024-07-05 06:37:55 - auth.py:267] - Done auth key exchange: DhGenOk[0m
+[1;92mINFO [2024-07-05 06:37:55 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-07-05 06:37:55 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-05 06:37:55 - connection.py:54] - Connected! Production DC2 - IPv4[0m
+[1;92mINFO [2024-07-05 06:37:55 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-07-05 06:37:55 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-07-05 06:37:55 - session.py:140] - Device: CPython 3.8.10 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-07-05 06:37:55 - session.py:141] - System: Linux 5.4.0-182-generic (en)[0m
+[1;92mINFO [2024-07-05 06:37:55 - session.py:155] - Session started[0m
+[1;92mINFO [2024-07-05 06:37:55 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-07-05 06:37:55 - session.py:291] - PingTask stopped[0m
+[1;92mINFO [2024-07-05 06:37:55 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-07-05 06:37:55 - session.py:315] - NetworkTask stopped[0m
+[1;92mINFO [2024-07-05 06:37:55 - session.py:180] - Session stopped[0m
+[1;92mINFO [2024-07-05 06:37:55 - auth.py:82] - Start creating a new auth key on DC4[0m
+[1;92mINFO [2024-07-05 06:37:55 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-05 06:37:55 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-05 06:37:57 - auth.py:267] - Done auth key exchange: DhGenOk[0m
+[1;92mINFO [2024-07-05 06:37:57 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-07-05 06:37:57 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-05 06:37:57 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-05 06:37:57 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-07-05 06:37:57 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-07-05 06:37:57 - session.py:140] - Device: CPython 3.8.10 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-07-05 06:37:57 - session.py:141] - System: Linux 5.4.0-182-generic (en)[0m
+[1;92mINFO [2024-07-05 06:37:57 - session.py:155] - Session started[0m
+[1;92mINFO [2024-07-05 06:37:57 - session.py:272] - PingTask started[0m
+[1;93mWARNING [2024-07-05 06:38:04 - account_manager.py:338] - Telegram says: [401 SESSION_PASSWORD_NEEDED] - The two-step verification is enabled and a password is required (caused by "auth.SignIn")[0m
+[1;93mWARNING [2024-07-05 06:38:07 - account_manager.py:347] - BAFmC3UAxXOXieRrcWIdLJ3l3uCDZP19ttqbaA5pUd0xhys1-9IhFNA0WWKkBYFTn3fFQKnLtctBJSxguyBXot_LQQHIM5Y1exDBrvq-ETRy0hzvga5Pck4R6zHjjX_t1UqV7uMU-tx8mCRQgC9LoUz-qHvS3mHVozlK6bfyVKUcnkSL5IGa7mpNAIJi38ITVPBUZagTCEeozEsfDSQPLoq83rE1SLGL1y5ASprHP_4gLDj1HkRCOs-1bWqU57smF-YZYwFDroFpfMO6yr6RFp29ln6SIVqdz0maymKjufcgqNsOupuo_SJv7iwHI3PiFWdiSlanP5KcfbBcarjtldo8vdUixwAAAAFIjDkpAA[0m
+[1;92mINFO [2024-07-05 06:38:07 - session.py:291] - PingTask stopped[0m
+[1;92mINFO [2024-07-05 06:38:07 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-07-05 06:38:07 - session.py:315] - NetworkTask stopped[0m
+[1;92mINFO [2024-07-05 06:38:07 - session.py:180] - Session stopped[0m
+[1;93mWARNING [2024-07-05 06:38:07 - utils.py:75] - running container for phone : +46765147252[0m
+[1;93mWARNING [2024-07-05 06:38:07 - utils.py:100] - Container bot-46765147252 started with ID: c9828dcfc60a9c0fe309403c90e65e3c8c79de5a1b9408b1eed46ec82b7360e9[0m
+[1;92mINFO [2024-07-05 06:40:22 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-07-05 06:40:24 - dispatcher.py:167] - Stopped 8 HandlerTasks[0m
+[1;92mINFO [2024-07-05 06:40:24 - session.py:291] - PingTask stopped[0m
+[1;92mINFO [2024-07-05 06:40:24 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-07-05 06:40:24 - session.py:315] - NetworkTask stopped[0m
+[1;92mINFO [2024-07-05 06:40:24 - session.py:180] - Session stopped[0m
+[1;92mINFO [2024-07-05 06:40:30 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-05 06:40:30 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-05 06:40:30 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-07-05 06:40:30 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-07-05 06:40:30 - session.py:140] - Device: CPython 3.8.10 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-07-05 06:40:30 - session.py:141] - System: Linux 5.4.0-182-generic (en)[0m
+[1;92mINFO [2024-07-05 06:40:30 - session.py:155] - Session started[0m
+[1;92mINFO [2024-07-05 06:40:30 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-07-05 06:40:30 - client.py:698] - [selfbot] [LOAD] CallbackQueryHandler("account_manager_handler") in group 1 from "plugins.account_manager"[0m
+[1;92mINFO [2024-07-05 06:40:30 - client.py:698] - [selfbot] [LOAD] CallbackQueryHandler("admin_manager_handler") in group 0 from "plugins.admin_manager"[0m
+[1;92mINFO [2024-07-05 06:40:30 - client.py:698] - [selfbot] [LOAD] MessageHandler("start_manager") in group 0 from "plugins.start_command"[0m
+[1;92mINFO [2024-07-05 06:40:30 - client.py:698] - [selfbot] [LOAD] MessageHandler("user_not_admin") in group 0 from "plugins.start_command"[0m
+[1;92mINFO [2024-07-05 06:40:30 - client.py:775] - [selfbot] Successfully loaded 4 plugins from "plugins"[0m
+[1;92mINFO [2024-07-05 06:40:30 - dispatcher.py:154] - Started 8 HandlerTasks[0m
+[1;92mINFO [2024-07-05 06:40:34 - start_command.py:17] - command : /start   -   user : 5512116521[0m
+[1;93mWARNING [2024-07-05 06:40:36 - admin_manager.py:12] - callback data : manager:accounts  - user : 5512116521[0m
+[1;93mWARNING [2024-07-05 06:40:37 - admin_manager.py:12] - callback data : manager:manage:+46765147252  - user : 5512116521[0m
+[1;93mWARNING [2024-07-05 06:40:38 - admin_manager.py:12] - callback data : manager:remove_account:+46765147252  - user : 5512116521[0m
+[1;93mWARNING [2024-07-05 06:40:39 - admin_manager.py:12] - callback data : manager:back  - user : 5512116521[0m
+[1;92mINFO [2024-07-05 06:42:16 - start_command.py:17] - command : /start   -   user : 5522477996[0m
+[1;93mWARNING [2024-07-05 06:42:17 - admin_manager.py:12] - callback data : manager:accounts  - user : 5522477996[0m
+[1;93mWARNING [2024-07-05 06:42:18 - admin_manager.py:12] - callback data : manager:back  - user : 5522477996[0m
+[1;93mWARNING [2024-07-05 06:43:48 - admin_manager.py:12] - callback data : manager:accounts  - user : 5522477996[0m
+[1;93mWARNING [2024-07-05 06:43:49 - admin_manager.py:12] - callback data : manager:add_account  - user : 5522477996[0m
+[1;92mINFO [2024-07-05 06:43:53 - auth.py:82] - Start creating a new auth key on DC2[0m
+[1;92mINFO [2024-07-05 06:43:53 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-05 06:43:53 - connection.py:54] - Connected! Production DC2 - IPv4[0m
+[1;92mINFO [2024-07-05 06:43:54 - auth.py:267] - Done auth key exchange: DhGenOk[0m
+[1;92mINFO [2024-07-05 06:43:54 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-07-05 06:43:54 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-05 06:43:54 - connection.py:54] - Connected! Production DC2 - IPv4[0m
+[1;92mINFO [2024-07-05 06:43:54 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-07-05 06:43:54 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-07-05 06:43:54 - session.py:140] - Device: CPython 3.8.10 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-07-05 06:43:54 - session.py:141] - System: Linux 5.4.0-182-generic (en)[0m
+[1;92mINFO [2024-07-05 06:43:54 - session.py:155] - Session started[0m
+[1;92mINFO [2024-07-05 06:43:54 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-07-05 06:43:54 - session.py:291] - PingTask stopped[0m
+[1;92mINFO [2024-07-05 06:43:54 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-07-05 06:43:54 - session.py:315] - NetworkTask stopped[0m
+[1;92mINFO [2024-07-05 06:43:54 - session.py:180] - Session stopped[0m
+[1;92mINFO [2024-07-05 06:43:54 - auth.py:82] - Start creating a new auth key on DC4[0m
+[1;92mINFO [2024-07-05 06:43:54 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-05 06:43:54 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-05 06:43:55 - auth.py:267] - Done auth key exchange: DhGenOk[0m
+[1;92mINFO [2024-07-05 06:43:55 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-07-05 06:43:55 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-05 06:43:55 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-05 06:43:55 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-07-05 06:43:55 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-07-05 06:43:55 - session.py:140] - Device: CPython 3.8.10 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-07-05 06:43:55 - session.py:141] - System: Linux 5.4.0-182-generic (en)[0m
+[1;92mINFO [2024-07-05 06:43:55 - session.py:155] - Session started[0m
+[1;92mINFO [2024-07-05 06:43:55 - session.py:272] - PingTask started[0m
+[1;93mWARNING [2024-07-05 06:44:11 - account_manager.py:338] - Telegram says: [401 SESSION_PASSWORD_NEEDED] - The two-step verification is enabled and a password is required (caused by "auth.SignIn")[0m
+[1;93mWARNING [2024-07-05 06:44:13 - account_manager.py:347] - BAFmC3UAl3BcvNYr_54HgD81E-KQ7kZ8XMqe1fxeXOLX-27Xg87qKCqtvRYIDRhWepCOSLTLfyaPT8tbSBLG2eeC2B4Y4djLyoOuga6yy6nlRaHS7S6KtzjOgaEcmd5diOvgqartKaK2wsOYwHi435tMUbQje8g-QoaBbUScO3OSXbtI9Lr41TWdCcw1TdNsG3cyvdlWfgOZv1gSSL07DqwOYmfBBCz1dfPCzpkpOSwuyvr_P8fYwJisGXe9HFMaF_CtFgvtnVJ4GhRoJwYB79qoBIHjIEaucZGgmfW3R0JkMhkZeJMQ--PPovENeaNkC0FQ3kFOaBN0KCC7tgzie3sOf5WJiQAAAAFIjDkpAA[0m
+[1;92mINFO [2024-07-05 06:44:13 - session.py:291] - PingTask stopped[0m
+[1;92mINFO [2024-07-05 06:44:13 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-07-05 06:44:13 - session.py:315] - NetworkTask stopped[0m
+[1;92mINFO [2024-07-05 06:44:13 - session.py:180] - Session stopped[0m
+[1;93mWARNING [2024-07-05 06:44:14 - utils.py:75] - running container for phone : +46765147252[0m
+[1;93mWARNING [2024-07-05 06:44:14 - utils.py:100] - Container bot-46765147252 started with ID: 1f925d5fadf9cab704711897d404b5fa3579afe5f1011574c8ef8165cf6f6464[0m
+[1;92mINFO [2024-07-05 06:44:43 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-07-05 06:44:45 - dispatcher.py:167] - Stopped 8 HandlerTasks[0m
+[1;92mINFO [2024-07-05 06:44:45 - session.py:291] - PingTask stopped[0m
+[1;92mINFO [2024-07-05 06:44:45 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-07-05 06:44:45 - session.py:315] - NetworkTask stopped[0m
+[1;92mINFO [2024-07-05 06:44:45 - session.py:180] - Session stopped[0m
+[1;92mINFO [2024-07-05 06:45:34 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-05 06:45:34 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-05 06:45:34 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-07-05 06:45:34 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-07-05 06:45:34 - session.py:140] - Device: CPython 3.8.10 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-07-05 06:45:34 - session.py:141] - System: Linux 5.4.0-182-generic (en)[0m
+[1;92mINFO [2024-07-05 06:45:34 - session.py:155] - Session started[0m
+[1;92mINFO [2024-07-05 06:45:34 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-07-05 06:45:34 - client.py:698] - [selfbot] [LOAD] CallbackQueryHandler("account_manager_handler") in group 1 from "plugins.account_manager"[0m
+[1;92mINFO [2024-07-05 06:45:34 - client.py:698] - [selfbot] [LOAD] CallbackQueryHandler("admin_manager_handler") in group 0 from "plugins.admin_manager"[0m
+[1;92mINFO [2024-07-05 06:45:34 - client.py:698] - [selfbot] [LOAD] MessageHandler("start_manager") in group 0 from "plugins.start_command"[0m
+[1;92mINFO [2024-07-05 06:45:34 - client.py:698] - [selfbot] [LOAD] MessageHandler("user_not_admin") in group 0 from "plugins.start_command"[0m
+[1;92mINFO [2024-07-05 06:45:34 - client.py:775] - [selfbot] Successfully loaded 4 plugins from "plugins"[0m
+[1;92mINFO [2024-07-05 06:45:34 - dispatcher.py:154] - Started 8 HandlerTasks[0m
+[1;92mINFO [2024-07-05 06:45:40 - start_command.py:17] - command : /start   -   user : 5522477996[0m
+[1;93mWARNING [2024-07-05 06:45:41 - admin_manager.py:12] - callback data : manager:accounts  - user : 5522477996[0m
+[1;93mWARNING [2024-07-05 06:45:42 - admin_manager.py:12] - callback data : manager:manage:+46765147252  - user : 5522477996[0m
+[1;93mWARNING [2024-07-05 06:45:43 - admin_manager.py:12] - callback data : manager:remove_account:+46765147252  - user : 5522477996[0m
+[1;93mWARNING [2024-07-05 06:45:44 - admin_manager.py:12] - callback data : manager:back  - user : 5522477996[0m
+[1;93mWARNING [2024-07-05 06:45:45 - admin_manager.py:12] - callback data : manager:accounts  - user : 5522477996[0m
+[1;93mWARNING [2024-07-05 06:45:46 - admin_manager.py:12] - callback data : manager:add_account  - user : 5522477996[0m
+[1;92mINFO [2024-07-05 06:45:52 - auth.py:82] - Start creating a new auth key on DC2[0m
+[1;92mINFO [2024-07-05 06:45:52 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-05 06:45:52 - connection.py:54] - Connected! Production DC2 - IPv4[0m
+[1;92mINFO [2024-07-05 06:45:54 - auth.py:267] - Done auth key exchange: DhGenOk[0m
+[1;92mINFO [2024-07-05 06:45:54 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-07-05 06:45:54 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-05 06:45:54 - connection.py:54] - Connected! Production DC2 - IPv4[0m
+[1;92mINFO [2024-07-05 06:45:54 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-07-05 06:45:54 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-07-05 06:45:54 - session.py:140] - Device: CPython 3.8.10 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-07-05 06:45:54 - session.py:141] - System: Linux 5.4.0-182-generic (en)[0m
+[1;92mINFO [2024-07-05 06:45:54 - session.py:155] - Session started[0m
+[1;92mINFO [2024-07-05 06:45:54 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-07-05 06:45:54 - session.py:291] - PingTask stopped[0m
+[1;92mINFO [2024-07-05 06:45:54 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-07-05 06:45:54 - session.py:315] - NetworkTask stopped[0m
+[1;92mINFO [2024-07-05 06:45:54 - session.py:180] - Session stopped[0m
+[1;92mINFO [2024-07-05 06:45:54 - auth.py:82] - Start creating a new auth key on DC4[0m
+[1;92mINFO [2024-07-05 06:45:54 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-05 06:45:54 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-05 06:45:56 - auth.py:267] - Done auth key exchange: DhGenOk[0m
+[1;92mINFO [2024-07-05 06:45:56 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-07-05 06:45:56 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-05 06:45:56 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-05 06:45:56 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-07-05 06:45:56 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-07-05 06:45:56 - session.py:140] - Device: CPython 3.8.10 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-07-05 06:45:56 - session.py:141] - System: Linux 5.4.0-182-generic (en)[0m
+[1;92mINFO [2024-07-05 06:45:56 - session.py:155] - Session started[0m
+[1;92mINFO [2024-07-05 06:45:56 - session.py:272] - PingTask started[0m
+[1;93mWARNING [2024-07-05 06:46:08 - account_manager.py:338] - Telegram says: [401 SESSION_PASSWORD_NEEDED] - The two-step verification is enabled and a password is required (caused by "auth.SignIn")[0m
+[1;93mWARNING [2024-07-05 06:46:10 - account_manager.py:347] - BAFmC3UAk5t6m1J9YaE07xD0GF2g4OVOYRjsNH1XanvtsZjvo-zjp6iI9Mjcx9q1jT_CIdsFE0vrPwBZ-OuPigp5ss0lnpuM_XcBR6DMaIC7ROPIZn9dsJwSCUZVi0P59bqK6O44GZxskTsPEUf6MpStpwFNH7EM-divuyTg3p1vJdFZ2Zot3Z2s9QiGDcsyLXn--0_4nmMzO9ERE4j2yUQwZSTnTRVercMlmxtNjXbxTdktx2PV-umvt3xcm8O0t2kmlcQ80QUOTACJ5sPBxy129q52sxr33Z5GsZYyEZSN68_TOvBAS9X9UdG1qx1wNn-NKMVc8WXJHlsOiQ2EOe3tihK3aQAAAAFIjDkpAA[0m
+[1;92mINFO [2024-07-05 06:46:10 - session.py:291] - PingTask stopped[0m
+[1;92mINFO [2024-07-05 06:46:10 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-07-05 06:46:10 - session.py:315] - NetworkTask stopped[0m
+[1;92mINFO [2024-07-05 06:46:10 - session.py:180] - Session stopped[0m
+[1;93mWARNING [2024-07-05 06:46:10 - utils.py:75] - running container for phone : +46765147252[0m
+[1;93mWARNING [2024-07-05 06:46:10 - utils.py:102] - 409 Client Error for http+docker://localhost/v1.45/containers/create?name=bot-46765147252: Conflict ("Conflict. The container name "/bot-46765147252" is already in use by container "1f925d5fadf9cab704711897d404b5fa3579afe5f1011574c8ef8165cf6f6464". You have to remove (or rename) that container to be able to reuse that name.")[0m
+[1;92mINFO [2024-07-05 06:46:40 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-07-05 06:46:44 - dispatcher.py:167] - Stopped 8 HandlerTasks[0m
+[1;92mINFO [2024-07-05 06:46:44 - session.py:291] - PingTask stopped[0m
+[1;92mINFO [2024-07-05 06:46:44 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-07-05 06:46:44 - session.py:315] - NetworkTask stopped[0m
+[1;92mINFO [2024-07-05 06:46:44 - session.py:180] - Session stopped[0m
+[1;92mINFO [2024-07-05 06:52:05 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-05 06:52:05 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-05 06:52:05 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-07-05 06:52:05 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-07-05 06:52:05 - session.py:140] - Device: CPython 3.8.10 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-07-05 06:52:05 - session.py:141] - System: Linux 5.4.0-182-generic (en)[0m
+[1;92mINFO [2024-07-05 06:52:05 - session.py:155] - Session started[0m
+[1;92mINFO [2024-07-05 06:52:05 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-07-05 06:52:05 - client.py:698] - [selfbot] [LOAD] CallbackQueryHandler("account_manager_handler") in group 1 from "plugins.account_manager"[0m
+[1;92mINFO [2024-07-05 06:52:05 - client.py:698] - [selfbot] [LOAD] CallbackQueryHandler("admin_manager_handler") in group 0 from "plugins.admin_manager"[0m
+[1;92mINFO [2024-07-05 06:52:05 - client.py:698] - [selfbot] [LOAD] MessageHandler("start_manager") in group 0 from "plugins.start_command"[0m
+[1;92mINFO [2024-07-05 06:52:05 - client.py:698] - [selfbot] [LOAD] MessageHandler("user_not_admin") in group 0 from "plugins.start_command"[0m
+[1;92mINFO [2024-07-05 06:52:05 - client.py:775] - [selfbot] Successfully loaded 4 plugins from "plugins"[0m
+[1;92mINFO [2024-07-05 06:52:05 - dispatcher.py:154] - Started 8 HandlerTasks[0m
+[1;92mINFO [2024-07-05 06:52:11 - start_command.py:17] - command : /start   -   user : 5522477996[0m
+[1;93mWARNING [2024-07-05 06:52:12 - admin_manager.py:12] - callback data : manager:accounts  - user : 5522477996[0m
+[1;93mWARNING [2024-07-05 06:52:13 - admin_manager.py:12] - callback data : manager:manage:+46765147252  - user : 5522477996[0m
+[1;93mWARNING [2024-07-05 06:52:14 - admin_manager.py:12] - callback data : manager:remove_account:+46765147252  - user : 5522477996[0m
+[1;93mWARNING [2024-07-05 06:52:15 - admin_manager.py:12] - callback data : manager:back  - user : 5522477996[0m
+[1;93mWARNING [2024-07-05 06:52:15 - admin_manager.py:12] - callback data : manager:admins  - user : 5522477996[0m
+[1;93mWARNING [2024-07-05 06:52:20 - admin_manager.py:12] - callback data : manager:back  - user : 5522477996[0m
+[1;93mWARNING [2024-07-05 06:52:21 - admin_manager.py:12] - callback data : manager:accounts  - user : 5522477996[0m
+[1;93mWARNING [2024-07-05 06:52:23 - admin_manager.py:12] - callback data : manager:add_account  - user : 5522477996[0m
+[1;92mINFO [2024-07-05 06:52:28 - auth.py:82] - Start creating a new auth key on DC2[0m
+[1;92mINFO [2024-07-05 06:52:28 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-05 06:52:28 - connection.py:54] - Connected! Production DC2 - IPv4[0m
+[1;92mINFO [2024-07-05 06:52:29 - auth.py:267] - Done auth key exchange: DhGenOk[0m
+[1;92mINFO [2024-07-05 06:52:29 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-07-05 06:52:29 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-05 06:52:29 - connection.py:54] - Connected! Production DC2 - IPv4[0m
+[1;92mINFO [2024-07-05 06:52:29 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-07-05 06:52:29 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-07-05 06:52:29 - session.py:140] - Device: CPython 3.8.10 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-07-05 06:52:29 - session.py:141] - System: Linux 5.4.0-182-generic (en)[0m
+[1;92mINFO [2024-07-05 06:52:29 - session.py:155] - Session started[0m
+[1;92mINFO [2024-07-05 06:52:29 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-07-05 06:52:29 - session.py:291] - PingTask stopped[0m
+[1;92mINFO [2024-07-05 06:52:29 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-07-05 06:52:29 - session.py:315] - NetworkTask stopped[0m
+[1;92mINFO [2024-07-05 06:52:29 - session.py:180] - Session stopped[0m
+[1;92mINFO [2024-07-05 06:52:29 - auth.py:82] - Start creating a new auth key on DC4[0m
+[1;92mINFO [2024-07-05 06:52:29 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-05 06:52:29 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-05 06:52:30 - auth.py:267] - Done auth key exchange: DhGenOk[0m
+[1;92mINFO [2024-07-05 06:52:30 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-07-05 06:52:30 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-05 06:52:30 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-05 06:52:30 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-07-05 06:52:30 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-07-05 06:52:30 - session.py:140] - Device: CPython 3.8.10 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-07-05 06:52:30 - session.py:141] - System: Linux 5.4.0-182-generic (en)[0m
+[1;92mINFO [2024-07-05 06:52:30 - session.py:155] - Session started[0m
+[1;92mINFO [2024-07-05 06:52:30 - session.py:272] - PingTask started[0m
+[1;93mWARNING [2024-07-05 06:52:43 - account_manager.py:338] - Telegram says: [401 SESSION_PASSWORD_NEEDED] - The two-step verification is enabled and a password is required (caused by "auth.SignIn")[0m
+[1;93mWARNING [2024-07-05 06:52:47 - account_manager.py:347] - BAFmC3UAkI5opTwYwxcQUl-AdLGSIFSVTZoZ0uXnnEqSQQmQgqrHc7-tqAOUCgL-UrVKVXVobDSOD-gUNZE7WWMOuLScx1pPS-VFxl0TtGiC3SHil1Shqnay7lxupHh53u5p2WYQjiXy_9deexTneIgEUV5EiJ1pXv03j4JzNryUPz4qRY3MXVI8OT7DnBzhEYDGebBk2wgkLmre5ixbDnHVlvWwHcFfouJIr35f0rtcmyi-zmF0rk5X-31rV8yPHyi1A9VcwLARg-dr0ycDN5EqrlpwaQx27prIP1l7_YalYYE1CmJWyauCusI14n3S43mB95kjJmSnD2k5G1F1xwZdXzzf5AAAAAFIjDkpAA[0m
+[1;92mINFO [2024-07-05 06:52:47 - session.py:291] - PingTask stopped[0m
+[1;92mINFO [2024-07-05 06:52:47 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-07-05 06:52:47 - session.py:315] - NetworkTask stopped[0m
+[1;92mINFO [2024-07-05 06:52:47 - session.py:180] - Session stopped[0m
+[1;93mWARNING [2024-07-05 06:52:47 - utils.py:75] - running container for phone : +46765147252[0m
+[1;93mWARNING [2024-07-05 06:52:47 - utils.py:96] - Container self-46765147252 started with ID: 31f887f87c6c2a75ccc9c6658c9f3a768510158b53bf703ecca042d06e3871ce[0m
+[1;92mINFO [2024-07-05 06:56:02 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-07-05 06:56:05 - dispatcher.py:167] - Stopped 8 HandlerTasks[0m
+[1;92mINFO [2024-07-05 06:56:05 - session.py:291] - PingTask stopped[0m
+[1;92mINFO [2024-07-05 06:56:05 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-07-05 06:56:05 - session.py:315] - NetworkTask stopped[0m
+[1;92mINFO [2024-07-05 06:56:05 - session.py:180] - Session stopped[0m
+[1;92mINFO [2024-07-05 06:58:08 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-05 06:58:08 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-05 06:58:08 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-07-05 06:58:08 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-07-05 06:58:08 - session.py:140] - Device: CPython 3.8.10 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-07-05 06:58:08 - session.py:141] - System: Linux 5.4.0-182-generic (en)[0m
+[1;92mINFO [2024-07-05 06:58:08 - session.py:155] - Session started[0m
+[1;92mINFO [2024-07-05 06:58:08 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-07-05 06:58:08 - client.py:698] - [selfbot] [LOAD] CallbackQueryHandler("account_manager_handler") in group 1 from "plugins.account_manager"[0m
+[1;92mINFO [2024-07-05 06:58:08 - client.py:698] - [selfbot] [LOAD] CallbackQueryHandler("admin_manager_handler") in group 0 from "plugins.admin_manager"[0m
+[1;92mINFO [2024-07-05 06:58:08 - client.py:698] - [selfbot] [LOAD] MessageHandler("start_manager") in group 0 from "plugins.start_command"[0m
+[1;92mINFO [2024-07-05 06:58:08 - client.py:698] - [selfbot] [LOAD] MessageHandler("user_not_admin") in group 0 from "plugins.start_command"[0m
+[1;92mINFO [2024-07-05 06:58:08 - client.py:775] - [selfbot] Successfully loaded 4 plugins from "plugins"[0m
+[1;92mINFO [2024-07-05 06:58:08 - dispatcher.py:154] - Started 8 HandlerTasks[0m
+[1;92mINFO [2024-07-05 06:58:10 - start_command.py:17] - command : /start   -   user : 5512116521[0m
+[1;92mINFO [2024-07-05 06:58:15 - start_command.py:17] - command : /start   -   user : 5522477996[0m
+[1;93mWARNING [2024-07-05 06:58:16 - admin_manager.py:12] - callback data : manager:accounts  - user : 5522477996[0m
+[1;93mWARNING [2024-07-05 06:58:18 - admin_manager.py:12] - callback data : manager:manage:+46765147252  - user : 5522477996[0m
+[1;93mWARNING [2024-07-05 06:58:19 - admin_manager.py:12] - callback data : manager:remove_account:+46765147252  - user : 5522477996[0m
+[1;93mWARNING [2024-07-05 06:58:20 - admin_manager.py:12] - callback data : manager:add_account  - user : 5522477996[0m
+[1;92mINFO [2024-07-05 06:58:31 - auth.py:82] - Start creating a new auth key on DC2[0m
+[1;92mINFO [2024-07-05 06:58:31 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-05 06:58:31 - connection.py:54] - Connected! Production DC2 - IPv4[0m
+[1;92mINFO [2024-07-05 06:58:33 - auth.py:267] - Done auth key exchange: DhGenOk[0m
+[1;92mINFO [2024-07-05 06:58:33 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-07-05 06:58:33 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-05 06:58:33 - connection.py:54] - Connected! Production DC2 - IPv4[0m
+[1;92mINFO [2024-07-05 06:58:33 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-07-05 06:58:33 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-07-05 06:58:33 - session.py:140] - Device: CPython 3.8.10 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-07-05 06:58:33 - session.py:141] - System: Linux 5.4.0-182-generic (en)[0m
+[1;92mINFO [2024-07-05 06:58:33 - session.py:155] - Session started[0m
+[1;92mINFO [2024-07-05 06:58:33 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-07-05 06:58:33 - session.py:291] - PingTask stopped[0m
+[1;92mINFO [2024-07-05 06:58:33 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-07-05 06:58:33 - session.py:315] - NetworkTask stopped[0m
+[1;92mINFO [2024-07-05 06:58:33 - session.py:180] - Session stopped[0m
+[1;92mINFO [2024-07-05 06:58:33 - auth.py:82] - Start creating a new auth key on DC4[0m
+[1;92mINFO [2024-07-05 06:58:33 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-05 06:58:33 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-05 06:58:34 - auth.py:267] - Done auth key exchange: DhGenOk[0m
+[1;92mINFO [2024-07-05 06:58:34 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-07-05 06:58:34 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-05 06:58:34 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-05 06:58:34 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-07-05 06:58:34 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-07-05 06:58:34 - session.py:140] - Device: CPython 3.8.10 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-07-05 06:58:34 - session.py:141] - System: Linux 5.4.0-182-generic (en)[0m
+[1;92mINFO [2024-07-05 06:58:34 - session.py:155] - Session started[0m
+[1;92mINFO [2024-07-05 06:58:34 - session.py:272] - PingTask started[0m
+[1;93mWARNING [2024-07-05 06:58:40 - account_manager.py:338] - Telegram says: [401 SESSION_PASSWORD_NEEDED] - The two-step verification is enabled and a password is required (caused by "auth.SignIn")[0m
+[1;93mWARNING [2024-07-05 06:58:42 - account_manager.py:347] - BAFmC3UAQQk4CjW_m08Fejg7lEvpDnzdQRg15nPqpCa_NesTsoLEPO4YtU0hzCl4Pqjom55uV7xzLIvxwzCvhch0jsYDemEmC7CIdFlYGQXcHNhZDhK-wr2oDYXnmcCAwMm9O7OlX6INt0HHg8N1MhafdgpuI_ug2ub_Od2CcRZANeCcnRG4hv7Y9RYPNcDO-LoUjpTJd01nsK5N-qc0TPefs8-nkqVl6o632jvolaEJct6A17hRrqQ6KTZAwJhdYppuj2_eTQo0ySzByO1sGyhVagF4aLzTxfWk5RrCU6NOlD3X8Zy-CS5XBsXI-LniKF5oSQPaKPegUO6d1zk6fsorOBGn7gAAAAFIjDkpAA[0m
+[1;92mINFO [2024-07-05 06:58:42 - session.py:291] - PingTask stopped[0m
+[1;92mINFO [2024-07-05 06:58:42 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-07-05 06:58:42 - session.py:315] - NetworkTask stopped[0m
+[1;92mINFO [2024-07-05 06:58:42 - session.py:180] - Session stopped[0m
+[1;93mWARNING [2024-07-05 06:58:42 - utils.py:75] - running container for phone : +46765147252[0m
+[1;93mWARNING [2024-07-05 06:58:43 - utils.py:98] - Container self-46765147252 started with ID: 8974272cc53b4d6ef0955caee4bdad667a8e0dced509b2de1c45b7f68e6dd32d[0m
+[1;93mWARNING [2024-07-05 06:59:42 - admin_manager.py:12] - callback data : manager:manage:+46765147252  - user : 5522477996[0m
+[1;93mWARNING [2024-07-05 06:59:43 - admin_manager.py:12] - callback data : manager:remove_account:+46765147252  - user : 5522477996[0m
+[1;92mINFO [2024-07-05 06:59:51 - start_command.py:17] - command : /start   -   user : 5512116521[0m
+[1;93mWARNING [2024-07-05 06:59:52 - admin_manager.py:12] - callback data : manager:accounts  - user : 5512116521[0m
+[1;93mWARNING [2024-07-05 06:59:54 - admin_manager.py:12] - callback data : manager:add_account  - user : 5512116521[0m
+[1;92mINFO [2024-07-05 06:59:58 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-07-05 07:00:54 - dispatcher.py:167] - Stopped 8 HandlerTasks[0m
+[1;92mINFO [2024-07-05 07:00:54 - session.py:291] - PingTask stopped[0m
+[1;92mINFO [2024-07-05 07:00:54 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-07-05 07:00:54 - session.py:315] - NetworkTask stopped[0m
+[1;92mINFO [2024-07-05 07:00:54 - session.py:180] - Session stopped[0m
+[1;92mINFO [2024-07-05 07:03:50 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-05 07:03:50 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-05 07:03:50 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-07-05 07:03:50 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-07-05 07:03:50 - session.py:140] - Device: CPython 3.8.10 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-07-05 07:03:50 - session.py:141] - System: Linux 5.4.0-182-generic (en)[0m
+[1;92mINFO [2024-07-05 07:03:50 - session.py:155] - Session started[0m
+[1;92mINFO [2024-07-05 07:03:50 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-07-05 07:03:50 - client.py:698] - [selfbot] [LOAD] CallbackQueryHandler("account_manager_handler") in group 1 from "plugins.account_manager"[0m
+[1;92mINFO [2024-07-05 07:03:50 - client.py:698] - [selfbot] [LOAD] CallbackQueryHandler("admin_manager_handler") in group 0 from "plugins.admin_manager"[0m
+[1;92mINFO [2024-07-05 07:03:50 - client.py:698] - [selfbot] [LOAD] MessageHandler("start_manager") in group 0 from "plugins.start_command"[0m
+[1;92mINFO [2024-07-05 07:03:50 - client.py:698] - [selfbot] [LOAD] MessageHandler("user_not_admin") in group 0 from "plugins.start_command"[0m
+[1;92mINFO [2024-07-05 07:03:50 - client.py:775] - [selfbot] Successfully loaded 4 plugins from "plugins"[0m
+[1;92mINFO [2024-07-05 07:03:50 - dispatcher.py:154] - Started 8 HandlerTasks[0m
+[1;92mINFO [2024-07-05 07:03:52 - start_command.py:17] - command : /start   -   user : 5512116521[0m
+[1;93mWARNING [2024-07-05 07:03:54 - admin_manager.py:12] - callback data : manager:accounts  - user : 5512116521[0m
+[1;93mWARNING [2024-07-05 07:03:55 - admin_manager.py:12] - callback data : manager:add_account  - user : 5512116521[0m
+[1;92mINFO [2024-07-05 07:04:07 - auth.py:82] - Start creating a new auth key on DC2[0m
+[1;92mINFO [2024-07-05 07:04:07 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-05 07:04:07 - connection.py:54] - Connected! Production DC2 - IPv4[0m
+[1;92mINFO [2024-07-05 07:04:09 - auth.py:267] - Done auth key exchange: DhGenOk[0m
+[1;92mINFO [2024-07-05 07:04:09 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-07-05 07:04:09 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-05 07:04:09 - connection.py:54] - Connected! Production DC2 - IPv4[0m
+[1;92mINFO [2024-07-05 07:04:09 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-07-05 07:04:09 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-07-05 07:04:09 - session.py:140] - Device: CPython 3.8.10 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-07-05 07:04:09 - session.py:141] - System: Linux 5.4.0-182-generic (en)[0m
+[1;92mINFO [2024-07-05 07:04:09 - session.py:155] - Session started[0m
+[1;92mINFO [2024-07-05 07:04:09 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-07-05 07:04:09 - session.py:291] - PingTask stopped[0m
+[1;92mINFO [2024-07-05 07:04:09 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-07-05 07:04:09 - session.py:315] - NetworkTask stopped[0m
+[1;92mINFO [2024-07-05 07:04:09 - session.py:180] - Session stopped[0m
+[1;92mINFO [2024-07-05 07:04:09 - auth.py:82] - Start creating a new auth key on DC4[0m
+[1;92mINFO [2024-07-05 07:04:09 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-05 07:04:09 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-05 07:04:11 - auth.py:267] - Done auth key exchange: DhGenOk[0m
+[1;92mINFO [2024-07-05 07:04:11 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-07-05 07:04:11 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-05 07:04:11 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-05 07:04:11 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-07-05 07:04:11 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-07-05 07:04:11 - session.py:140] - Device: CPython 3.8.10 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-07-05 07:04:11 - session.py:141] - System: Linux 5.4.0-182-generic (en)[0m
+[1;92mINFO [2024-07-05 07:04:11 - session.py:155] - Session started[0m
+[1;92mINFO [2024-07-05 07:04:11 - session.py:272] - PingTask started[0m
+[1;93mWARNING [2024-07-05 07:04:16 - account_manager.py:338] - Telegram says: [401 SESSION_PASSWORD_NEEDED] - The two-step verification is enabled and a password is required (caused by "auth.SignIn")[0m
+[1;93mWARNING [2024-07-05 07:04:19 - account_manager.py:347] - BAFmC3UAGGDvOlGChGH28j9YZrZU1ag625hu6sXplSIVStkndki9xiVZ4-xRur3EjOcmPVvmg9RoAW9hrDcd1eDicatKSAIVy4Plqu2Q7i4HISvJTz2b2IA10jrhM_-PNXhplfiL387U7GpYXP-lR7HG1i1yWFdnaIIl_9eh_S_EipoSWb0UMfpL6C9P1VTMvfYmQ2kR974mhLO0HNr4lrLO0Uhexcpuv5wbqrEveOzplQC2WODxUU5MmGJW9cICmnBBuf-C8pbksBhZavxcz-DnYe1FxS4u7zToLyoODaJBcYfXR2CU9wuEJ_4f138etlD6_NfEbw7uTgkYLfN_E976Z8Q9uwAAAAFIjDkpAA[0m
+[1;92mINFO [2024-07-05 07:04:19 - session.py:291] - PingTask stopped[0m
+[1;92mINFO [2024-07-05 07:04:19 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-07-05 07:04:19 - session.py:315] - NetworkTask stopped[0m
+[1;92mINFO [2024-07-05 07:04:19 - session.py:180] - Session stopped[0m
+[1;93mWARNING [2024-07-05 07:04:19 - utils.py:75] - running container for phone : +46765147252[0m
+[1;93mWARNING [2024-07-05 07:04:19 - utils.py:111] - local variable 'client' referenced before assignment[0m
+[1;93mWARNING [2024-07-05 07:05:14 - admin_manager.py:12] - callback data : manager:manage:+46765147252  - user : 5512116521[0m
+[1;93mWARNING [2024-07-05 07:05:15 - admin_manager.py:12] - callback data : manager:remove_account:+46765147252  - user : 5512116521[0m
+[1;93mWARNING [2024-07-05 07:05:16 - admin_manager.py:12] - callback data : manager:add_account  - user : 5512116521[0m
+[1;92mINFO [2024-07-05 07:05:21 - auth.py:82] - Start creating a new auth key on DC2[0m
+[1;92mINFO [2024-07-05 07:05:21 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-05 07:05:21 - connection.py:54] - Connected! Production DC2 - IPv4[0m
+[1;92mINFO [2024-07-05 07:05:22 - auth.py:267] - Done auth key exchange: DhGenOk[0m
+[1;92mINFO [2024-07-05 07:05:22 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-07-05 07:05:22 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-05 07:05:22 - connection.py:54] - Connected! Production DC2 - IPv4[0m
+[1;92mINFO [2024-07-05 07:05:22 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-07-05 07:05:22 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-07-05 07:05:22 - session.py:140] - Device: CPython 3.8.10 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-07-05 07:05:22 - session.py:141] - System: Linux 5.4.0-182-generic (en)[0m
+[1;92mINFO [2024-07-05 07:05:22 - session.py:155] - Session started[0m
+[1;92mINFO [2024-07-05 07:05:22 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-07-05 07:05:22 - session.py:291] - PingTask stopped[0m
+[1;92mINFO [2024-07-05 07:05:22 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-07-05 07:05:22 - session.py:315] - NetworkTask stopped[0m
+[1;92mINFO [2024-07-05 07:05:22 - session.py:180] - Session stopped[0m
+[1;92mINFO [2024-07-05 07:05:22 - auth.py:82] - Start creating a new auth key on DC4[0m
+[1;92mINFO [2024-07-05 07:05:22 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-05 07:05:22 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-05 07:05:23 - auth.py:267] - Done auth key exchange: DhGenOk[0m
+[1;92mINFO [2024-07-05 07:05:23 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-07-05 07:05:23 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-05 07:05:23 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-05 07:05:23 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-07-05 07:05:23 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-07-05 07:05:23 - session.py:140] - Device: CPython 3.8.10 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-07-05 07:05:23 - session.py:141] - System: Linux 5.4.0-182-generic (en)[0m
+[1;92mINFO [2024-07-05 07:05:23 - session.py:155] - Session started[0m
+[1;92mINFO [2024-07-05 07:05:23 - session.py:272] - PingTask started[0m
+[1;93mWARNING [2024-07-05 07:05:28 - account_manager.py:338] - Telegram says: [401 SESSION_PASSWORD_NEEDED] - The two-step verification is enabled and a password is required (caused by "auth.SignIn")[0m
+[1;93mWARNING [2024-07-05 07:05:31 - account_manager.py:347] - BAFmC3UACxMUbL-WmwiStG8TqJI7_IQVAsP7JpCTq21wN-m_fintuNl0_6j0M7HnMZc7OBfxffsdPU0AJ8uulHeoWqWbGXqWZwFSA70FtiPTbLbkY6YfmsEICM9yIByadla4x4jNI5UAOf8Fw2rZh8imGOPqjwOIsVNvoK5qlYaoaoVD49Zfzfj2R2B-LqkLADNg7EEbUHO5qScPHFi7XPzRSB00KzIJd0Rtlh_LRM-clpy3t7__jhiss6i1IpFmt7SNwfK8p-VLKRgYbp5HOoEao6dXN4sBLWpYGcDK1Eb8UAfPShtG7yyNcV1HJIMBFPJuP-MiF009WvCk4H9_BOayglzEaQAAAAFIjDkpAA[0m
+[1;92mINFO [2024-07-05 07:05:31 - session.py:291] - PingTask stopped[0m
+[1;92mINFO [2024-07-05 07:05:31 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-07-05 07:05:31 - session.py:315] - NetworkTask stopped[0m
+[1;92mINFO [2024-07-05 07:05:31 - session.py:180] - Session stopped[0m
+[1;93mWARNING [2024-07-05 07:05:31 - utils.py:75] - running container for phone : +46765147252[0m
+[1;93mWARNING [2024-07-05 07:05:31 - utils.py:111] - local variable 'client' referenced before assignment[0m
+[1;92mINFO [2024-07-05 07:06:48 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-07-05 07:06:50 - dispatcher.py:167] - Stopped 8 HandlerTasks[0m
+[1;92mINFO [2024-07-05 07:06:50 - session.py:291] - PingTask stopped[0m
+[1;92mINFO [2024-07-05 07:06:50 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-07-05 07:06:50 - session.py:315] - NetworkTask stopped[0m
+[1;92mINFO [2024-07-05 07:06:50 - session.py:180] - Session stopped[0m
+[1;92mINFO [2024-07-05 07:13:00 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-05 07:13:00 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-05 07:13:00 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-07-05 07:13:00 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-07-05 07:13:00 - session.py:140] - Device: CPython 3.8.10 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-07-05 07:13:00 - session.py:141] - System: Linux 5.4.0-182-generic (en)[0m
+[1;92mINFO [2024-07-05 07:13:00 - session.py:155] - Session started[0m
+[1;92mINFO [2024-07-05 07:13:00 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-07-05 07:13:00 - client.py:698] - [selfbot] [LOAD] CallbackQueryHandler("account_manager_handler") in group 1 from "plugins.account_manager"[0m
+[1;92mINFO [2024-07-05 07:13:00 - client.py:698] - [selfbot] [LOAD] CallbackQueryHandler("admin_manager_handler") in group 0 from "plugins.admin_manager"[0m
+[1;92mINFO [2024-07-05 07:13:00 - client.py:698] - [selfbot] [LOAD] MessageHandler("start_manager") in group 0 from "plugins.start_command"[0m
+[1;92mINFO [2024-07-05 07:13:00 - client.py:698] - [selfbot] [LOAD] MessageHandler("user_not_admin") in group 0 from "plugins.start_command"[0m
+[1;92mINFO [2024-07-05 07:13:00 - client.py:775] - [selfbot] Successfully loaded 4 plugins from "plugins"[0m
+[1;92mINFO [2024-07-05 07:13:00 - dispatcher.py:154] - Started 8 HandlerTasks[0m
+[1;92mINFO [2024-07-05 07:13:03 - start_command.py:17] - command : /start   -   user : 5512116521[0m
+[1;93mWARNING [2024-07-05 07:13:04 - admin_manager.py:12] - callback data : manager:accounts  - user : 5512116521[0m
+[1;93mWARNING [2024-07-05 07:13:05 - admin_manager.py:12] - callback data : manager:manage:+46765147252  - user : 5512116521[0m
+[1;93mWARNING [2024-07-05 07:13:06 - admin_manager.py:12] - callback data : manager:status_account:+46765147252  - user : 5512116521[0m
+[1;93mWARNING [2024-07-05 07:13:07 - admin_manager.py:12] - callback data : manager:status_account:+46765147252  - user : 5512116521[0m
+[1;93mWARNING [2024-07-05 07:13:33 - admin_manager.py:12] - callback data : manager:remove_account:+46765147252  - user : 5512116521[0m
+[1;93mWARNING [2024-07-05 07:13:35 - admin_manager.py:12] - callback data : manager:add_account  - user : 5512116521[0m
+[1;92mINFO [2024-07-05 07:13:41 - auth.py:82] - Start creating a new auth key on DC2[0m
+[1;92mINFO [2024-07-05 07:13:41 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-05 07:13:41 - connection.py:54] - Connected! Production DC2 - IPv4[0m
+[1;92mINFO [2024-07-05 07:13:42 - auth.py:267] - Done auth key exchange: DhGenOk[0m
+[1;92mINFO [2024-07-05 07:13:42 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-07-05 07:13:42 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-05 07:13:42 - connection.py:54] - Connected! Production DC2 - IPv4[0m
+[1;92mINFO [2024-07-05 07:13:42 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-07-05 07:13:42 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-07-05 07:13:42 - session.py:140] - Device: CPython 3.8.10 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-07-05 07:13:42 - session.py:141] - System: Linux 5.4.0-182-generic (en)[0m
+[1;92mINFO [2024-07-05 07:13:42 - session.py:155] - Session started[0m
+[1;92mINFO [2024-07-05 07:13:42 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-07-05 07:13:42 - session.py:291] - PingTask stopped[0m
+[1;92mINFO [2024-07-05 07:13:42 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-07-05 07:13:42 - session.py:315] - NetworkTask stopped[0m
+[1;92mINFO [2024-07-05 07:13:42 - session.py:180] - Session stopped[0m
+[1;92mINFO [2024-07-05 07:13:42 - auth.py:82] - Start creating a new auth key on DC4[0m
+[1;92mINFO [2024-07-05 07:13:42 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-05 07:13:42 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-05 07:13:44 - auth.py:267] - Done auth key exchange: DhGenOk[0m
+[1;92mINFO [2024-07-05 07:13:44 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-07-05 07:13:44 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-05 07:13:44 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-05 07:13:44 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-07-05 07:13:44 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-07-05 07:13:44 - session.py:140] - Device: CPython 3.8.10 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-07-05 07:13:44 - session.py:141] - System: Linux 5.4.0-182-generic (en)[0m
+[1;92mINFO [2024-07-05 07:13:44 - session.py:155] - Session started[0m
+[1;92mINFO [2024-07-05 07:13:44 - session.py:272] - PingTask started[0m
+[1;93mWARNING [2024-07-05 07:13:48 - account_manager.py:338] - Telegram says: [401 SESSION_PASSWORD_NEEDED] - The two-step verification is enabled and a password is required (caused by "auth.SignIn")[0m
+[1;93mWARNING [2024-07-05 07:13:51 - account_manager.py:347] - BAFmC3UAaX0AntbwcdIOmrP_SzV4HAAFzubHotg2pZTa8ZVNl-za5eYECBrSBoXcvf5U-eSSndjC0aBb_iLPBnNHSSBWugnyQGmfyjybhvaRymGVr9Sf5miO8bestGqCQKn6ZRJ7mpE3a2ajzjbmRci51AEhnvvoH8r5h6hjujmBq7Uth3T3e3e699_Q8phAIzbwTfLWJNT_4ykFtAze6_NbCTyb8X57Y_WKFYAT1rgjBlXLB6Ctps4QDfR5XiD1JyBhXulHU-r3WH042qucPRCgqTAq4Gx9LqvCvp8gmcCFzNLz9dHZBMG0p_UVc_EzZKzvPEJYeiwRpd9bsXjcesyALBQrEQAAAAFIjDkpAA[0m
+[1;92mINFO [2024-07-05 07:13:51 - session.py:291] - PingTask stopped[0m
+[1;92mINFO [2024-07-05 07:13:51 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-07-05 07:13:51 - session.py:315] - NetworkTask stopped[0m
+[1;92mINFO [2024-07-05 07:13:51 - session.py:180] - Session stopped[0m
+[1;93mWARNING [2024-07-05 07:13:51 - utils.py:75] - running container for phone : +46765147252[0m
+[1;93mWARNING [2024-07-05 07:13:55 - utils.py:92] - Existing container self-46765147252 stopped and removed[0m
+[1;93mWARNING [2024-07-05 07:13:56 - utils.py:110] - Container self-46765147252 started with ID: a6bbde84ddd04109010e58adbeb5370a8373d04077355fe2338330975e105e88[0m
+[1;93mWARNING [2024-07-05 07:14:32 - admin_manager.py:12] - callback data : manager:manage:+46765147252  - user : 5512116521[0m
+[1;93mWARNING [2024-07-05 07:14:34 - admin_manager.py:12] - callback data : manager:remove_account:+46765147252  - user : 5512116521[0m
+[1;93mWARNING [2024-07-05 07:14:35 - admin_manager.py:12] - callback data : manager:add_account  - user : 5512116521[0m
+[1;92mINFO [2024-07-05 07:14:40 - auth.py:82] - Start creating a new auth key on DC2[0m
+[1;92mINFO [2024-07-05 07:14:40 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-05 07:14:40 - connection.py:54] - Connected! Production DC2 - IPv4[0m
+[1;92mINFO [2024-07-05 07:14:41 - auth.py:267] - Done auth key exchange: DhGenOk[0m
+[1;92mINFO [2024-07-05 07:14:41 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-07-05 07:14:41 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-05 07:14:41 - connection.py:54] - Connected! Production DC2 - IPv4[0m
+[1;92mINFO [2024-07-05 07:14:41 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-07-05 07:14:41 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-07-05 07:14:41 - session.py:140] - Device: CPython 3.8.10 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-07-05 07:14:41 - session.py:141] - System: Linux 5.4.0-182-generic (en)[0m
+[1;92mINFO [2024-07-05 07:14:41 - session.py:155] - Session started[0m
+[1;92mINFO [2024-07-05 07:14:41 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-07-05 07:14:42 - session.py:291] - PingTask stopped[0m
+[1;92mINFO [2024-07-05 07:14:42 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-07-05 07:14:42 - session.py:315] - NetworkTask stopped[0m
+[1;92mINFO [2024-07-05 07:14:42 - session.py:180] - Session stopped[0m
+[1;92mINFO [2024-07-05 07:14:42 - auth.py:82] - Start creating a new auth key on DC4[0m
+[1;92mINFO [2024-07-05 07:14:42 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-05 07:14:42 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-05 07:14:43 - auth.py:267] - Done auth key exchange: DhGenOk[0m
+[1;92mINFO [2024-07-05 07:14:43 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-07-05 07:14:43 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-05 07:14:43 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-05 07:14:43 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-07-05 07:14:43 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-07-05 07:14:43 - session.py:140] - Device: CPython 3.8.10 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-07-05 07:14:43 - session.py:141] - System: Linux 5.4.0-182-generic (en)[0m
+[1;92mINFO [2024-07-05 07:14:43 - session.py:155] - Session started[0m
+[1;92mINFO [2024-07-05 07:14:43 - session.py:272] - PingTask started[0m
+[1;93mWARNING [2024-07-05 07:14:49 - account_manager.py:338] - Telegram says: [401 SESSION_PASSWORD_NEEDED] - The two-step verification is enabled and a password is required (caused by "auth.SignIn")[0m
+[1;93mWARNING [2024-07-05 07:14:52 - account_manager.py:347] - BAFmC3UAiVybNPxNG9kQ9BT5ORUNvQz4K-M5QNPbsJYekZMpnAiJEQMD7KWpTYdL9znMGDUMMMFrQwqJA8tPkWYJphy-m6Hf9PjrzZtfTdqASiPEfO9yCqk9DpGW3rfHU4KMSk8uoJ_RhUgth_7-Owz5syzKcLbVcluLhKxo_qlk-UkoomXcw5C1PXf-zimsjKY9a9xUyV7PIYroJGAKMagX2Wtb960yP7BG2HIFvf_9dUXuSSP9kVr8iq4-IhdCb-zU2U9gduMZgIhvn-gL8oKzfTeK0LSkk3JcILLsaVK1AHWXT-95gHDqPBLsty9-D6LZZgHTZm4yDQR00mifGyYWIIK36gAAAAFIjDkpAA[0m
+[1;92mINFO [2024-07-05 07:14:52 - session.py:291] - PingTask stopped[0m
+[1;92mINFO [2024-07-05 07:14:52 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-07-05 07:14:52 - session.py:315] - NetworkTask stopped[0m
+[1;92mINFO [2024-07-05 07:14:52 - session.py:180] - Session stopped[0m
+[1;93mWARNING [2024-07-05 07:14:52 - utils.py:75] - running container for phone : +46765147252[0m
+[1;93mWARNING [2024-07-05 07:14:57 - utils.py:92] - Existing container self-46765147252 stopped and removed[0m
+[1;93mWARNING [2024-07-05 07:14:57 - utils.py:110] - Container self-46765147252 started with ID: 8fa44b9a7f0967c8ab7e4d15c01fb76c40aed73e27d9fc9ed75f03bbad5941ff[0m
+[1;93mWARNING [2024-07-05 07:15:07 - admin_manager.py:12] - callback data : manager:back  - user : 5512116521[0m
+[1;93mWARNING [2024-07-05 07:15:08 - admin_manager.py:12] - callback data : manager:accounts  - user : 5512116521[0m
+[1;92mINFO [2024-07-05 07:15:17 - start_command.py:17] - command : /start   -   user : 5522477996[0m
+[1;93mWARNING [2024-07-05 07:15:19 - admin_manager.py:12] - callback data : manager:accounts  - user : 5522477996[0m
+[1;93mWARNING [2024-07-05 07:15:20 - admin_manager.py:12] - callback data : manager:back  - user : 5522477996[0m
+[1;93mWARNING [2024-07-05 07:15:21 - admin_manager.py:12] - callback data : manager:admins  - user : 5522477996[0m
+[1;93mWARNING [2024-07-05 07:15:22 - admin_manager.py:12] - callback data : manager:back  - user : 5522477996[0m
+[1;92mINFO [2024-07-05 07:15:29 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-07-05 07:15:32 - dispatcher.py:167] - Stopped 8 HandlerTasks[0m
+[1;92mINFO [2024-07-05 07:15:32 - session.py:291] - PingTask stopped[0m
+[1;92mINFO [2024-07-05 07:15:32 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-07-05 07:15:32 - session.py:315] - NetworkTask stopped[0m
+[1;92mINFO [2024-07-05 07:15:32 - session.py:180] - Session stopped[0m
