@@ -3,7 +3,7 @@ from config import ADMIN , API_ID , API_HASH , BOT_USERNAME , FORWARDER_IMAGE_NA
 from . import text 
 import random
 import docker
-
+import config
 
 
 
@@ -91,7 +91,9 @@ def run_docker(phone ):
                             "API_ID": API_ID,
                             "SESSION_PATH": session_path,
                             "BOT_USERNAME": BOT_USERNAME,
-                            'ACCOUNT_PHON' : phone.replace('+' , '')
+                            'PHONE_NUMBER' : phone.replace('+' , '') , 
+                            'REDIS_HOST' : config.REDIS_HOST , 
+                            'REDIS_DB'  : config.REDIS_DB,
                         },
                         detach=True 
                     )
