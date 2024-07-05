@@ -1,0 +1,16 @@
+[1;92mINFO [2024-07-05 06:07:57 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-05 06:07:57 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-05 06:07:57 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-07-05 06:07:58 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-07-05 06:07:58 - session.py:140] - Device: CPython 3.8.10 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-07-05 06:07:58 - session.py:141] - System: Linux 5.4.0-182-generic (en)[0m
+[1;92mINFO [2024-07-05 06:07:58 - session.py:155] - Session started[0m
+[1;92mINFO [2024-07-05 06:07:58 - session.py:272] - PingTask started[0m
+[1;93mWARNING [2024-07-05 06:07:58 - client.py:778] - [selfbot] No plugin loaded from "plugins"[0m
+[1;92mINFO [2024-07-05 06:07:58 - dispatcher.py:154] - Started 8 HandlerTasks[0m
+[1;92mINFO [2024-07-05 06:08:01 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-07-05 06:08:03 - dispatcher.py:167] - Stopped 8 HandlerTasks[0m
+[1;92mINFO [2024-07-05 06:08:03 - session.py:291] - PingTask stopped[0m
+[1;92mINFO [2024-07-05 06:08:03 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-07-05 06:08:03 - session.py:315] - NetworkTask stopped[0m
+[1;92mINFO [2024-07-05 06:08:03 - session.py:180] - Session stopped[0m
